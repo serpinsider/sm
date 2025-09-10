@@ -1,0 +1,430 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Account {
+  id                String  @id @default(cuid())
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String?
+  access_token      String?
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String?
+  session_state     String?
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+  @@index([userId])
+  @@map("accounts")
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@map("sessions")
+}
+
+model VerificationToken {
+  identifier String
+  token      String   @unique
+  expires    DateTime
+
+  @@unique([identifier, token])
+  @@map("verification_tokens")
+}
+
+model User {
+  id              String    @id @default(cuid())
+  email           String?   @unique
+  phone           String?   @unique
+  firstName       String?
+  lastName        String?
+  role            UserRole  @default(CUSTOMER)
+  active          Boolean   @default(true)
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+  lastLoginAt     DateTime?
+  password        String?
+  loginToken      String?   // Magic link token
+  tokenExpires    DateTime? // Token expiration
+  phoneVerified   Boolean   @default(false) // Phone verification status
+  customerProfile Customer?
+  providerProfile Provider?
+  accounts        Account[]
+  sessions        Session[]
+
+  @@index([email])
+  @@index([phone])
+  @@index([role])
+  @@index([active])
+  @@index([createdAt])
+  @@index([loginToken])
+  @@map("users")
+}
+
+model AutomationTrigger {
+  id   String @id @default(cuid())
+  name String @unique
+
+  @@map("automation_triggers")
+}
+
+model Lead {
+  id                 String          @id @default(cuid())
+  firstName          String
+  lastName           String
+  email              String
+  phone              String
+  bedrooms           String
+  bathrooms          String
+  frequency          String
+  squareFootage      String
+  serviceType        ServiceType
+  addons             Json
+  basePrice          Float?
+  addonsTotal        Float?
+  finalPrice         Float?
+  status             LeadStatus      @default(NEW)
+  customBookingLink  String          @unique
+  confirmationNumber String          @unique
+  notes              String?
+  source             String?
+  createdAt          DateTime        @default(now())
+  updatedAt          DateTime        @updatedAt
+  convertedAt        DateTime?
+  automationLogs     AutomationLog[]
+  customer           Customer?
+  quoteHistory       QuoteHistory[]
+
+  @@index([email])
+  @@index([phone])
+  @@index([status])
+  @@index([serviceType])
+  @@index([createdAt])
+  @@index([convertedAt])
+  @@index([source])
+  @@map("leads")
+}
+
+model QuoteHistory {
+  id            String      @id @default(cuid())
+  leadId        String
+  serviceType   ServiceType
+  bedrooms      String
+  bathrooms     String
+  frequency     String
+  squareFootage String
+  addons        Json
+  basePrice     Float
+  addonsTotal   Float
+  finalPrice    Float
+  createdAt     DateTime    @default(now())
+  lead          Lead        @relation(fields: [leadId], references: [id], onDelete: Cascade)
+
+  @@index([leadId])
+  @@index([createdAt])
+  @@index([serviceType])
+  @@map("quote_history")
+}
+
+model Customer {
+  id               String    @id @default(cuid())
+  userId           String?   @unique
+  leadId           String?   @unique
+  email            String    @unique
+  phone            String    @unique
+  stripeCustomerId String?   @unique
+  addresses        Json?
+  preferences      Json?
+  notes            String?
+  createdAt        DateTime  @default(now())
+  updatedAt        DateTime  @updatedAt
+  bookings         Booking[]
+  lead             Lead?     @relation(fields: [leadId], references: [id])
+  user             User?     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([email])
+  @@index([phone])
+  @@index([stripeCustomerId])
+  @@index([createdAt])
+  @@map("customers")
+}
+
+model Provider {
+  id           String               @id @default(cuid())
+  userId       String               @unique
+  areas        Json
+  availability Json
+  rating       Float?               @default(5.0)
+  totalJobs    Int                  @default(0)
+  active       Boolean              @default(true)
+  notes        String?
+  isAdminManaged Boolean            @default(false)  // New: Admin manages this provider
+  adminNotes   String?              // New: Internal admin notes
+  createdAt    DateTime             @default(now())
+  updatedAt    DateTime             @updatedAt
+  applications BookingApplication[]
+  bookings     Booking[]
+  timeEntries  TimeEntry[]
+  user         User                 @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([active])
+  @@index([rating])
+  @@index([totalJobs])
+  @@index([createdAt])
+  @@index([isAdminManaged])
+  @@map("providers")
+}
+
+model Booking {
+  id             String               @id @default(cuid())
+  customerId     String
+  providerId     String?
+  serviceType    ServiceType
+  serviceDate    DateTime
+  serviceTime    String
+  address        Json
+  addons         Json
+  estimatedPrice Float?
+  finalPrice     Float?
+  status         BookingStatus        @default(PENDING)
+  notes          String?
+  customerNotes  String?
+  providerNotes  String?
+  completedAt    DateTime?
+  assignedAt     DateTime?
+  confirmedAt    DateTime?
+  createdAt      DateTime             @default(now())
+  updatedAt      DateTime             @updatedAt
+  automationLogs AutomationLog[]
+  applications   BookingApplication[]
+  provider       Provider?            @relation(fields: [providerId], references: [id])
+  customer       Customer             @relation(fields: [customerId], references: [id])
+  calendarEvents CalendarEvent[]
+  timeEntries    TimeEntry[]
+
+  @@index([customerId])
+  @@index([providerId])
+  @@index([serviceType])
+  @@index([serviceDate])
+  @@index([status])
+  @@index([createdAt])
+  @@index([completedAt])
+  @@index([assignedAt])
+  @@index([confirmedAt])
+  @@map("bookings")
+}
+
+model BookingApplication {
+  id            String   @id @default(cuid())
+  bookingId     String
+  providerId    String
+  message       String?
+  estimatedTime String?
+  appliedAt     DateTime @default(now())
+  status        String   @default("PENDING")
+  provider      Provider @relation(fields: [providerId], references: [id], onDelete: Cascade)
+  booking       Booking  @relation(fields: [bookingId], references: [id], onDelete: Cascade)
+
+  @@unique([bookingId, providerId])
+  @@map("booking_applications")
+}
+
+model CalendarEvent {
+  id          String   @id @default(cuid())
+  bookingId   String
+  title       String
+  description String?
+  startTime   DateTime
+  endTime     DateTime
+  allDay      Boolean  @default(false)
+  color       String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  booking     Booking  @relation(fields: [bookingId], references: [id], onDelete: Cascade)
+
+  @@map("calendar_events")
+}
+
+model Automation {
+  id          String          @id @default(cuid())
+  name        String
+  description String?
+  trigger     String
+  conditions  Json
+  actions     Json
+  active      Boolean         @default(true)
+  createdAt   DateTime        @default(now())
+  updatedAt   DateTime        @updatedAt
+  logs        AutomationLog[]
+
+  @@map("automations")
+}
+
+model AutomationLog {
+  id           String     @id @default(cuid())
+  automationId String
+  leadId       String?
+  bookingId    String?
+  userId       String?
+  status       String
+  error        String?
+  data         Json?
+  executedAt   DateTime   @default(now())
+  booking      Booking?   @relation(fields: [bookingId], references: [id])
+  lead         Lead?      @relation(fields: [leadId], references: [id])
+  automation   Automation @relation(fields: [automationId], references: [id])
+
+  @@map("automation_logs")
+}
+
+model CommunicationLog {
+  id         String   @id @default(cuid())
+  type       String
+  to         String
+  from       String
+  subject    String?
+  message    String
+  status     String
+  provider   String
+  externalId String?
+  sentAt     DateTime @default(now())
+
+  @@map("communication_logs")
+}
+
+model TimeEntry {
+  id          String    @id @default(cuid())
+  bookingId   String
+  providerId  String
+  clockInTime DateTime
+  clockOutTime DateTime?
+  totalMinutes Int?
+  location    Json?     // GPS coordinates and address
+  notes       String?
+  clockInMethod String  @default("SMS") // SMS, APP, MANUAL
+  clockOutMethod String?
+  isActive    Boolean   @default(true)  // For tracking current active session
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  booking     Booking   @relation(fields: [bookingId], references: [id], onDelete: Cascade)
+  provider    Provider  @relation(fields: [providerId], references: [id], onDelete: Cascade)
+
+  @@index([bookingId])
+  @@index([providerId])
+  @@index([clockInTime])
+  @@index([isActive])
+  @@index([createdAt])
+  @@map("time_entries")
+}
+
+enum UserRole {
+  ADMIN
+  CUSTOMER
+  PROVIDER
+}
+
+enum LeadStatus {
+  NEW
+  CONTACTED
+  QUOTED
+  CONVERTED
+  LOST
+}
+
+enum BookingStatus {
+  PENDING
+  CONFIRMED
+  ASSIGNED
+  IN_PROGRESS
+  COMPLETED
+  CANCELLED
+}
+
+enum ServiceType {
+  STANDARD
+  DEEP
+  SUPER
+  MOVEOUT
+  POST_CONSTRUCTION
+}
+
+enum ProviderApplicationStatus {
+  PENDING
+  UNDER_REVIEW
+  INTERVIEW_SCHEDULED
+  BACKGROUND_CHECK
+  APPROVED
+  REJECTED
+  ONBOARDING
+  COMPLETED
+}
+
+model ProviderApplication {
+  id                    String                    @id @default(cuid())
+  
+  // Personal Information
+  firstName             String
+  lastName              String
+  email                 String                    @unique
+  phone                 String
+  address               Json                      // Full address object
+  dateOfBirth           DateTime?
+  
+  // Professional Information
+  hasExperience         Boolean                   @default(false)
+  experienceYears       Int?
+  previousJobs          String?                   // Text description
+  whyInterested         String?                   // Why want to clean
+  
+  // Practical Information
+  hasTransportation     Boolean                   @default(false)
+  vehicleType           String?                   // Car, truck, etc.
+  availableAreas        Json                      // ZIP codes they can serve
+  availability          Json                      // Days/hours available
+  
+  // Legal & Compliance
+  backgroundCheckConsent Boolean                  @default(false)
+  hasInsurance          Boolean                   @default(false)
+  canLiftWeight         Boolean                   @default(false)
+  
+  // References
+  references            Json?                     // Array of reference objects
+  
+  // Application Status
+  status                ProviderApplicationStatus @default(PENDING)
+  adminNotes            String?                   // Internal admin notes
+  rejectionReason       String?                   // If rejected, why
+  
+  // Onboarding
+  interviewDate         DateTime?
+  backgroundCheckDate   DateTime?
+  trainingCompletedAt   DateTime?
+  convertedToProviderId String?                   // If approved and converted
+  
+  // Timestamps
+  submittedAt           DateTime                  @default(now())
+  reviewedAt            DateTime?
+  completedAt           DateTime?
+  updatedAt             DateTime                  @updatedAt
+
+  @@index([status])
+  @@index([submittedAt])
+  @@index([email])
+  @@map("provider_applications")
+}

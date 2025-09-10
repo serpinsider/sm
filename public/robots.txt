@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://sacmaids.com/sitemap.xml
+
+# Allow search engines to crawl important pages
+Allow: /services/
+Allow: /quote
+Allow: /booking
+Allow: /privacy
+Allow: /terms
+Allow: /refund
+
+# Block any private areas
+Disallow: /api/
+
+# Crawl delay
+Crawl-delay: 1
