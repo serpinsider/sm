@@ -175,7 +175,7 @@ export default function QuoteForm() {
         return;
       }
 
-      const confirmationNumber = 'BAYSIDE-' + Math.random().toString(36).substring(2, 8).toUpperCase();
+      const confirmationNumber = 'SM-' + Math.random().toString(36).substring(2, 8).toUpperCase();
 
       // Create structured data like StepWizard
       const structuredData = {
@@ -190,7 +190,7 @@ export default function QuoteForm() {
         frequency: formData.frequency,
         addons: formData.addons,
         confirmationNumber,
-        _subject: `Quote Request for Sac Maids from ${formData.firstName} ${formData.lastName} - #${confirmationNumber}`,
+        _subject: `Quote Request for Santa Monica Maids from ${formData.firstName} ${formData.lastName} - #${confirmationNumber}`,
       };
 
       const formspreeResponse = await fetch('https://formspree.io/f/xeoebodr', {
@@ -487,7 +487,7 @@ export default function QuoteForm() {
             </div>
 
             <p className="text-xs text-white/60 text-center mb-4">
-              By submitting this form, you agree to receive communications from Sac Maids regarding your quote request. We respect your privacy and will never share your information.
+              By submitting this form, you agree to receive communications from Santa Monica Maids regarding your quote request. We respect your privacy and will never share your information.
             </p>
 
             <button
@@ -620,13 +620,13 @@ export default function QuoteForm() {
                     <span>Text us</span>
                   </a>
                   <a 
-                    href="mailto:hello@sacmaids.com" 
+                    href="mailto:hello@santamonicamaids.com" 
                     className="flex items-center space-x-3 text-base text-white/80 hover:text-white transition-colors"
                   >
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>
-                    <span>hello@pinemaids.com</span>
+                    <span>hello@santamonicamaids.com</span>
                   </a>
                 </div>
 
@@ -645,7 +645,7 @@ export default function QuoteForm() {
                     <div className="space-y-1">
                       <p className="text-sm font-medium text-white/90">What areas do you serve?</p>
                       <p className="text-xs text-white/70 leading-relaxed">
-                        We serve Tampa, St. Pete, Lutz, and Clearwater.<br />
+                        We serve Santa Monica, Venice, Brentwood, Pacific Palisades, and Marina del Rey.<br />
                         Contact us to confirm service in your area.
                       </p>
                     </div>

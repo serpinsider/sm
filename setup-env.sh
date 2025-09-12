@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Create .env.local file for Bayside Maids development
+# Create .env.local file for Santa Monica Maids development
 cat > .env.local << 'EOF'
 # Database
 DATABASE_URL="file:./dev.db"

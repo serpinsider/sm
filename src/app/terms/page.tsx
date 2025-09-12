@@ -59,18 +59,19 @@ export default function TermsOfService() {
             <h2 className="text-2xl font-semibold text-[#CEC28D] mb-4">Service Area</h2>
             <p className="text-white/90 mb-4">We currently serve:</p>
             <ul className="list-disc pl-6 mb-4 text-white/80 space-y-2">
-              <li>Tampa</li>
-              <li>St. Petersburg</li>
-              <li>Lutz</li>
-              <li>Clearwater</li>
+              <li>Santa Monica</li>
+              <li>Roseville</li>
+              <li>Elk Grove</li>
+              <li>Folsom</li>
+              <li>Davis</li>
             </ul>
           </section>
 
           <section className="mb-12">
             <h2 className="text-2xl font-semibold text-[#CEC28D] mb-4">Contact Us</h2>
             <p className="text-white/90">For questions about these terms:</p>
-            <p className="text-white/90">Email: support@sacmaids.com</p>
-            <p className="text-white/90">Phone: (916) 680-5200</p>
+            <p className="text-white/90">Email: support@santamonicamaids.com</p>
+            <p className="text-white/90">Phone: (310) 555-0123</p>
           </section>
         </div>
       </div>

@@ -1,7 +1,7 @@
 // Location-specific configuration
 export const LOCATION_DETAILS = {
-  'xjkoaljr': { name: 'Sac Maids', domain: 'sacmaids.com', agent: 'Sarah' },
-  'default': { name: 'Sac Maids', domain: 'sacmaids.com', agent: 'Sarah' }
+  'xjkoaljr': { name: 'Santa Monica Maids', domain: 'santamonicamaids.com', agent: 'Sarah' },
+  'default': { name: 'Santa Monica Maids', domain: 'santamonicamaids.com', agent: 'Sarah' }
 };
 
 // Pricing configuration
@@ -78,6 +78,6 @@ export const MESSAGE_TEMPLATES = {
 
 // Phone numbers configuration
 export const PHONE_NUMBERS = {
-  'xjkoaljr': '+19166805200',  // Sac Maids form
-  'default': '+19166805200'    // Default to Sac Maids number
+  'xjkoaljr': '+19166805200',  // Santa Monica Maids form
+  'default': '+19166805200'    // Default to Santa Monica Maids number
 };

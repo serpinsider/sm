@@ -4,16 +4,16 @@
   /* Custom dark blue color palette based on #0f172a */
   --background: #f8fafc;
   --foreground: #0f172a;
-  --pine-50: #f8fafc;
-  --pine-100: #e2e8f0;
-  --pine-200: #cbd5e1;
-  --pine-300: #94a3b8;
-  --pine-400: #64748b;
-  --pine-500: #475569;
-  --pine-600: #334155;
-  --pine-700: #1e293b;
-  --pine-800: #0f172a;
-  --pine-900: #020617;
+  --santa-monica-50: #f8fafc;
+  --santa-monica-100: #e2e8f0;
+  --santa-monica-200: #cbd5e1;
+  --santa-monica-300: #94a3b8;
+  --santa-monica-400: #64748b;
+  --santa-monica-500: #475569;
+  --santa-monica-600: #334155;
+  --santa-monica-700: #1e293b;
+  --santa-monica-800: #0f172a;
+  --santa-monica-900: #020617;
   
   /* Button system */
   --primary-button-bg: #0C6F47;
@@ -41,24 +41,24 @@
   
   /* Accessible text colors */
   --text-on-dark: #f5f5f5;      /* Winter white on dark backgrounds */
-  --text-on-light: #142b14;     /* Pine-900 on light backgrounds */
-  --text-muted-dark: #d1ead1;   /* Pine-200 for muted text on dark */
-  --text-muted-light: #1e4a1e;  /* Pine-700 for muted text on light */
+  --text-on-light: #142b14;     /* Santa Monica-900 on light backgrounds */
+  --text-muted-dark: #d1ead1;   /* Santa Monica-200 for muted text on dark */
+  --text-muted-light: #1e4a1e;  /* Santa Monica-700 for muted text on light */
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-pine-50: var(--pine-50);
-  --color-pine-100: var(--pine-100);
-  --color-pine-200: var(--pine-200);
-  --color-pine-300: var(--pine-300);
-  --color-pine-400: var(--pine-400);
-  --color-pine-500: var(--pine-500);
-  --color-pine-600: var(--pine-600);
-  --color-pine-700: var(--pine-700);
-  --color-pine-800: var(--pine-800);
-  --color-pine-900: var(--pine-900);
+  --color-santa-monica-50: var(--santa-monica-50);
+  --color-santa-monica-100: var(--santa-monica-100);
+  --color-santa-monica-200: var(--santa-monica-200);
+  --color-santa-monica-300: var(--santa-monica-300);
+  --color-santa-monica-400: var(--santa-monica-400);
+  --color-santa-monica-500: var(--santa-monica-500);
+  --color-santa-monica-600: var(--santa-monica-600);
+  --color-santa-monica-700: var(--santa-monica-700);
+  --color-santa-monica-800: var(--santa-monica-800);
+  --color-santa-monica-900: var(--santa-monica-900);
   --color-forest-green: var(--forest-green);
   --color-earth-brown: var(--earth-brown);
   --color-winter-white: var(--winter-white);
@@ -66,8 +66,8 @@
   --color-text-on-light: var(--text-on-light);
   --color-text-muted-dark: var(--text-muted-dark);
   --color-text-muted-light: var(--text-muted-light);
-  --color-pine-button-light: var(--pine-button-light);
-  --color-pine-button-light-hover: var(--pine-button-light-hover);
+  --color-santa-monica-button-light: var(--sm-button-light);
+  --color-santa-monica-button-light-hover: var(--sm-button-light-hover);
   --font-sans: var(--font-inter);
   --font-serif: var(--font-merriweather);
   --font-mono: var(--font-geist-mono);

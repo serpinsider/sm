@@ -17,33 +17,33 @@ const merriweather = Merriweather({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://sacmaids.com'),
+  metadataBase: new URL('https://santamonicamaids.com'),
   title: {
-    default: "Sac Maids | Professional House Cleaning Services - Sacramento",
-    template: "%s | Sac Maids - Professional Cleaning"
+    default: "Santa Monica Maids | Professional House Cleaning Services - Santa Monica",
+    template: "%s | Santa Monica Maids - Professional Cleaning"
   },
-  description: "Professional house cleaning in Sacramento. Licensed & insured maids, 100% satisfaction guarantee. Book your trusted cleaning service in Sacramento, Folsom, Roseville & Elk Grove today!",
+  description: "Professional house cleaning in Santa Monica. Licensed & insured maids, 100% satisfaction guarantee. Book your trusted cleaning service in Santa Monica, Venice, Brentwood & Pacific Palisades today!",
   keywords: [
     "house cleaning", 
     "maid service", 
     "residential cleaning", 
     "home cleaning", 
     "cleaning company",
-    "Elk Grove cleaning", 
-    "Sacramento cleaning", 
-    "Folsom cleaning", 
-    "Roseville cleaning", 
+    "Venice cleaning", 
+    "Santa Monica cleaning", 
+    "Brentwood cleaning", 
+    "Pacific Palisades cleaning", 
     "California cleaning",
-    "Sacramento house cleaning", 
-    "Folsom maid service", 
-    "Sacramento maid service", 
+    "Santa Monica house cleaning", 
+    "Venice maid service", 
+    "Santa Monica maid service", 
     "California maid service", 
-    "residential cleaning Sacramento", 
-    "home cleaning Sacramento"
+    "residential cleaning Santa Monica", 
+    "home cleaning Santa Monica"
   ],
-  authors: [{ name: "Sac Maids" }],
-  creator: "Sac Maids",
-  publisher: "Sac Maids",
+  authors: [{ name: "Santa Monica Maids" }],
+  creator: "Santa Monica Maids",
+  publisher: "Santa Monica Maids",
   robots: {
     index: true,
     follow: true,
@@ -58,24 +58,24 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://sacmaids.com",
-    title: "Sac Maids - Professional House Cleaning Service | Sacramento",
-    description: "Professional house cleaning service in Sacramento, California. Reliable, insured, and trusted residential cleaning with free quotes.",
-    siteName: "Sac Maids",
+    url: "https://santamonicamaids.com",
+    title: "Santa Monica Maids - Professional House Cleaning Service | Santa Monica",
+    description: "Professional house cleaning service in Santa Monica, California. Reliable, insured, and trusted residential cleaning with free quotes.",
+    siteName: "Santa Monica Maids",
     images: [
       {
         url: "/ogs-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Bayside Maids - Professional House Cleaning Services",
+        alt: "Santa Monica Maids - Professional House Cleaning Services",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bayside Maids - Professional House Cleaning Service | Tampa Bay",
-    description: "Professional house cleaning service in Tampa Bay, Florida. Reliable, insured, trusted residential cleaning. Get your free quote today!",
-    creator: "@baysidemaids",
+    title: "Santa Monica Maids - Professional House Cleaning Service | Santa Monica",
+    description: "Professional house cleaning service in Santa Monica, California. Reliable, insured, trusted residential cleaning. Get your free quote today!",
+    creator: "@santamonicamaids",
     images: ["/ogs-image.jpg"],
   },
   verification: {
@@ -84,7 +84,7 @@ export const metadata: Metadata = {
     yahoo: "your-yahoo-verification-code",
   },
   alternates: {
-    canonical: "https://sacmaids.com",
+    canonical: "https://santamonicamaids.com",
   },
   icons: {
     icon: '/favicon.ico',

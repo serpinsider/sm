@@ -14,15 +14,15 @@ export default function Footer() {
           <div className="md:col-span-1">
             <Image
               src="/logo.png"
-              alt="Sac Maids"
+              alt="Santa Monica Maids"
               width={120}
               height={40}
               className="h-8 w-auto mb-4"
             />
             <div className="space-y-2 text-sm">
-              <p className="text-white/80">(916) 680-5200</p>
-              <p className="text-white/80">hello@sacmaids.com</p>
-              <p className="text-white/80">1225 J Street, Sacramento, CA 95814</p>
+              <p className="text-white/80">(310) 555-0123</p>
+              <p className="text-white/80">hello@santamonicamaids.com</p>
+              <p className="text-white/80">1234 Ocean Avenue, Santa Monica, CA 90401</p>
             </div>
           </div>
 
@@ -63,7 +63,7 @@ export default function Footer() {
         <div className="mt-8 pt-6 border-t border-white/10">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-white/60 text-sm">
-              © {currentYear} Sac Maids. All rights reserved.
+              © {currentYear} Santa Monica Maids. All rights reserved.
             </p>
 
           </div>

@@ -65,7 +65,7 @@ export default function HeroSection() {
               : 'opacity-100 relative visible'
           }`}>
                         <h1 className="text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-[#CEC28D] mb-6 drop-shadow-lg">
-              Premium Sacramento House Cleaners
+              Premium Santa Monica House Cleaners
             </h1>
             <p className="text-base sm:text-base lg:text-lg text-gray-100 mb-8 leading-relaxed drop-shadow-md">
               Schedule your cleaning appointment or receive a free estimate in under 60 seconds.

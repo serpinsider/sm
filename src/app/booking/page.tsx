@@ -2,8 +2,8 @@ import { Metadata } from 'next';
 import BookingEmbed from '@/components/BookingEmbed';
 
 export const metadata: Metadata = {
-  title: 'Book Your Cleaning | Sac Maids',
-  description: 'Schedule your professional cleaning service with Sac Maids. Our easy booking system lets you customize your cleaning needs and find the perfect time slot for your schedule.',
+  title: 'Book Your Cleaning | Santa Monica Maids',
+  description: 'Schedule your professional cleaning service with Santa Monica Maids. Our easy booking system lets you customize your cleaning needs and find the perfect time slot for your schedule.',
   keywords: [
     'book cleaning service',
     'online cleaning booking',
@@ -15,10 +15,10 @@ export const metadata: Metadata = {
     'same day cleaning booking',
   ],
   openGraph: {
-    title: 'Book Your Cleaning | Sac Maids',
-    description: 'Book your professional home cleaning service in minutes. Choose your cleaning type, schedule your preferred date and time, and let Sac Maids take care of the rest.',
-    url: 'https://pinemaids.com/booking',
-    siteName: 'Sac Maids',
+    title: 'Book Your Cleaning | Santa Monica Maids',
+    description: 'Book your professional home cleaning service in minutes. Choose your cleaning type, schedule your preferred date and time, and let Santa Monica Maids take care of the rest.',
+    url: 'https://santamonicamaids.com/booking',
+    siteName: 'Santa Monica Maids',
     images: [
       {
         url: '/og-image.jpg',
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://pinemaids.com/booking',
+    canonical: 'https://santamonicamaids.com/booking',
   },
 };
 

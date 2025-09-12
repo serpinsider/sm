@@ -3,7 +3,7 @@
 import StepWizard from './StepWizard';
 
 const serviceAreas = [
-  'Tampa', 'St. Petersburg', 'Lutz', 'Clearwater'
+  'Santa Monica', 'Venice', 'Brentwood', 'Pacific Palisades', 'Marina del Rey'
 ];
 
 export default function AreasWeServeSection() {
@@ -13,10 +13,10 @@ export default function AreasWeServeSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
                       <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-[#CEC28D] mb-4">
-            Sacramento Service Locations
+            Santa Monica Service Locations
           </h2>
                       <p className="text-sm sm:text-base text-white/70 max-w-3xl mx-auto mb-8">
-              Expert residential cleaning available across the greater Tampa metropolitan region.
+              Expert residential cleaning available across the greater Santa Monica and Westside areas.
             </p>
           
           {/* Service Areas Summary */}

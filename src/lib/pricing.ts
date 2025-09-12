@@ -2,8 +2,8 @@ export type ServiceType = 'Standard Clean' | 'Deep Clean' | 'Super Clean' | 'Mov
 
 // Location-specific configuration
 export const LOCATION_DETAILS = {
-  'xjkoaljr': { name: 'Sac Maids', domain: 'sacmaids.com', agent: 'Sarah' },
-  'default': { name: 'Sac Maids', domain: 'sacmaids.com', agent: 'Sarah' }
+  'xjkoaljr': { name: 'Santa Monica Maids', domain: 'santamonicamaids.com', agent: 'Sarah' },
+  'default': { name: 'Santa Monica Maids', domain: 'santamonicamaids.com', agent: 'Sarah' }
 };
 
 // Pricing configuration

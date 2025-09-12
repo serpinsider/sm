@@ -116,7 +116,7 @@ export default function WhatWeCleanSection() {
             Detailed Service Breakdown
           </h2>
                       <p className="text-sm sm:text-base text-white/70 max-w-3xl mx-auto">
-              Discover exactly what&apos;s covered in every Sacramento cleaning appointment.
+              Discover exactly what&apos;s covered in every Santa Monica cleaning appointment.
             </p>
         </div>
 
@@ -207,7 +207,7 @@ export default function WhatWeCleanSection() {
               Schedule Your Service
             </h2>
             <p className="text-white/70">
-              Receive your personalized estimate and book your Sacramento cleaning appointment.
+              Receive your personalized estimate and book your Santa Monica cleaning appointment.
             </p>
           </div>
           

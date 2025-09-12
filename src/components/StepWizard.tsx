@@ -268,7 +268,7 @@ export default function StepWizard({ onFormExpand }: StepWizardProps = {}) {
     setErrors({});
 
     try {
-      const confirmationNumber = 'BAYSIDE-' + Math.random().toString(36).substring(2, 8).toUpperCase();
+      const confirmationNumber = 'SM-' + Math.random().toString(36).substring(2, 8).toUpperCase();
 
       // Flatten the form data but keep addons as one grouped object
       const flattenedData = {
@@ -284,7 +284,7 @@ export default function StepWizard({ onFormExpand }: StepWizardProps = {}) {
         frequency: formData.frequency,
         addons: formData.addons,
         confirmationNumber,
-        _subject: `Quote Request for Sac Maids from ${formData.firstName} ${formData.lastName} - #${confirmationNumber}`,
+        _subject: `Quote Request for Santa Monica Maids from ${formData.firstName} ${formData.lastName} - #${confirmationNumber}`,
       };
 
       const response = await fetch('https://formspree.io/f/xeoebodr', {
@@ -632,7 +632,7 @@ export default function StepWizard({ onFormExpand }: StepWizardProps = {}) {
             )}
 
             <p className="text-xs text-white/60 text-center mb-4">
-              By submitting this form, you agree to receive communications from Sac Maids regarding your quote request. We respect your privacy and will never share your information.
+              By submitting this form, you agree to receive communications from Santa Monica Maids regarding your quote request. We respect your privacy and will never share your information.
             </p>
           </div>
         );
@@ -685,7 +685,7 @@ export default function StepWizard({ onFormExpand }: StepWizardProps = {}) {
               Your Request Has Been Submitted!
             </h3>
             <p className="text-white/80 mb-6">
-              A member of our Tampa Bay team will reach out shortly.
+              A member of our Santa Monica team will reach out shortly.
             </p>
             <div className="rounded-lg p-4">
               <p className="text-white text-sm">

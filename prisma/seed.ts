@@ -11,10 +11,10 @@ async function main() {
 
   // Create Admin User
   const adminUser = await prisma.user.upsert({
-    where: { email: 'admin@pinemaids.com' },
+    where: { email: 'admin@santamonicamaids.com' },
     update: {},
     create: {
-      email: 'admin@pinemaids.com',
+      email: 'admin@santamonicamaids.com',
       firstName: 'Admin',
       lastName: 'User',
       password: hashedPassword,
@@ -27,10 +27,10 @@ async function main() {
 
   // Create Provider User
   const providerUser = await prisma.user.upsert({
-    where: { email: 'provider@pinemaids.com' },
+    where: { email: 'provider@santamonicamaids.com' },
     update: {},
     create: {
-      email: 'provider@pinemaids.com',
+      email: 'provider@santamonicamaids.com',
       firstName: 'Sarah',
       lastName: 'Provider',
       password: hashedPassword,
@@ -64,10 +64,10 @@ async function main() {
 
   // Create Customer User
   const customerUser = await prisma.user.upsert({
-    where: { email: 'customer@pinemaids.com' },
+    where: { email: 'customer@santamonicamaids.com' },
     update: {},
     create: {
-      email: 'customer@pinemaids.com',
+      email: 'customer@santamonicamaids.com',
       firstName: 'John',
       lastName: 'Customer',
       password: hashedPassword,
@@ -105,7 +105,7 @@ async function main() {
 
   // Create some sample leads for testing
   const sampleLead = await prisma.lead.upsert({
-    where: { confirmationNumber: 'PINE-ABC123' },
+    where: { confirmationNumber: 'SM-ABC123' },
     update: {},
     create: {
       firstName: 'Jane',
@@ -126,7 +126,7 @@ async function main() {
       finalPrice: 190,
       status: 'NEW',
       customBookingLink: '/book/sample-lead-123',
-      confirmationNumber: 'PINE-ABC123',
+      confirmationNumber: 'SM-ABC123',
       notes: 'Interested in weekly service starting next month',
       source: 'website'
     }
@@ -173,17 +173,17 @@ async function main() {
   console.log('\n📋 Test Login Credentials:');
   console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
   console.log('👑 ADMIN (CRM Access):');
-  console.log('   Email: admin@pinemaids.com');
+  console.log('   Email: admin@santamonicamaids.com');
   console.log('   Password: password123');
   console.log('   URL: /crm');
   console.log('');
   console.log('🧹 PROVIDER:');
-  console.log('   Email: provider@pinemaids.com');
+  console.log('   Email: provider@santamonicamaids.com');
   console.log('   Password: password123');
   console.log('   URL: /provider');
   console.log('');
   console.log('👤 CUSTOMER:');
-  console.log('   Email: customer@pinemaids.com');
+  console.log('   Email: customer@santamonicamaids.com');
   console.log('   Password: password123');
   console.log('   URL: /account');
   console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');

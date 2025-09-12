@@ -14,17 +14,17 @@ export default function StructuredData({ type, data }: StructuredDataProps) {
         return {
           "@context": "https://schema.org",
           "@type": "LocalBusiness",
-          "name": "Sac Maids",
-          "image": "https://sacmaids.com/logo.png",
-          "description": "Professional house cleaning services serving Tampa Bay and surrounding areas. Reliable, thorough, and trusted cleaning for your home.",
-          "url": "https://sacmaids.com",
+          "name": "Santa Monica Maids",
+          "image": "https://santamonicamaids.com/logo.png",
+          "description": "Professional house cleaning services serving Santa Monica and surrounding areas. Reliable, thorough, and trusted cleaning for your home.",
+          "url": "https://santamonicamaids.com",
           "telephone": "+19166805200",
-          "email": "hello@sacmaids.com",
+          "email": "hello@santamonicamaids.com",
           "address": {
             "@type": "PostalAddress",
             "addressCountry": "US",
             "addressRegion": "CA",
-            "addressLocality": "Sacramento",
+            "addressLocality": "Santa Monica",
             "postalCode": "95814",
             "streetAddress": "1225 J Street"
           },
@@ -40,7 +40,7 @@ export default function StructuredData({ type, data }: StructuredDataProps) {
             },
             {
               "@type": "City",
-              "name": "Sacramento"
+              "name": "Santa Monica"
             },
             {
               "@type": "City",
@@ -68,10 +68,10 @@ export default function StructuredData({ type, data }: StructuredDataProps) {
             "worstRating": "1"
           },
           "sameAs": [
-            "https://www.facebook.com/baysidemaids",
-            "https://www.instagram.com/baysidemaids",
-            "https://www.linkedin.com/company/baysidemaids",
-            "https://twitter.com/baysidemaids"
+            "https://www.facebook.com/santamonicamaids",
+            "https://www.instagram.com/santamonicamaids",
+            "https://www.linkedin.com/company/santamonicamaids",
+            "https://twitter.com/santamonicamaids"
           ]
         };
 
@@ -79,9 +79,9 @@ export default function StructuredData({ type, data }: StructuredDataProps) {
         return {
           "@context": "https://schema.org",
           "@type": "Organization",
-          "name": "Sac Maids",
-          "url": "https://sacmaids.com",
-          "logo": "https://sacmaids.com/logo.png",
+          "name": "Santa Monica Maids",
+          "url": "https://santamonicamaids.com",
+          "logo": "https://santamonicamaids.com/logo.png",
           "description": "Professional house cleaning services across New England and Mid-Atlantic states.",
           "contactPoint": {
             "@type": "ContactPoint",
@@ -91,10 +91,10 @@ export default function StructuredData({ type, data }: StructuredDataProps) {
             "availableLanguage": "English"
           },
           "sameAs": [
-            "https://www.facebook.com/baysidemaids",
-            "https://www.instagram.com/baysidemaids",
-            "https://www.linkedin.com/company/baysidemaids",
-            "https://twitter.com/baysidemaids"
+            "https://www.facebook.com/santamonicamaids",
+            "https://www.instagram.com/santamonicamaids",
+            "https://www.linkedin.com/company/santamonicamaids",
+            "https://twitter.com/santamonicamaids"
           ]
         };
 
@@ -102,15 +102,15 @@ export default function StructuredData({ type, data }: StructuredDataProps) {
         return {
           "@context": "https://schema.org",
           "@type": "WebSite",
-          "name": "Sac Maids",
-          "alternateName": ["PM", "Sac Maids Cleaning", "sacmaids.com"],
-          "url": "https://sacmaids.com",
-          "description": "Professional house cleaning services across Tampa Bay, Florida",
+          "name": "Santa Monica Maids",
+          "alternateName": ["SM", "Santa Monica Maids Cleaning", "santamonicamaids.com"],
+          "url": "https://santamonicamaids.com",
+          "description": "Professional house cleaning services across Santa Monica, California",
           "potentialAction": {
             "@type": "SearchAction",
             "target": {
               "@type": "EntryPoint",
-              "urlTemplate": "https://sacmaids.com/search?q={search_term_string}"
+              "urlTemplate": "https://santamonicamaids.com/search?q={search_term_string}"
             },
             "query-input": "required name=search_term_string"
           }
@@ -171,8 +171,8 @@ export default function StructuredData({ type, data }: StructuredDataProps) {
           "name": `House Cleaning Services${data?.location ? ` in ${data.location}` : ''}`,
           "provider": {
             "@type": "LocalBusiness",
-            "name": "Sac Maids",
-            "url": "https://sacmaids.com"
+            "name": "Santa Monica Maids",
+            "url": "https://santamonicamaids.com"
           },
           "serviceType": "House Cleaning",
           "description": `Professional house cleaning and maid services${data?.location ? ` in ${data.location}` : ''}. Regular cleaning, deep cleaning, move-out cleaning, and specialty services.`,
@@ -217,7 +217,7 @@ export default function StructuredData({ type, data }: StructuredDataProps) {
           "name": `House Cleaning Services in ${data?.location}`,
           "provider": {
             "@type": "LocalBusiness",
-            "name": "Sac Maids"
+            "name": "Santa Monica Maids"
           },
           "serviceArea": {
             "@type": "State",

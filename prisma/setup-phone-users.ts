@@ -87,9 +87,9 @@ async function main() {
       addresses: [
         {
           street: '789 Customer Lane',
-          city: 'Tampa',
-          state: 'FL',
-          zip: '33701'
+          city: 'Santa Monica',
+          state: 'CA',
+          zip: '95814'
         }
       ],
       preferences: {

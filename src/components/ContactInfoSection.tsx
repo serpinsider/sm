@@ -21,7 +21,7 @@ export default function ContactInfoSection() {
               </svg>
             </div>
             <h3 className="text-xl font-semibold text-white mb-2">Digital Contact</h3>
-            <p className="text-white font-semibold">hello@sacmaids.com</p>
+            <p className="text-white font-semibold">hello@santamonicamaids.com</p>
             <p className="text-sm text-white">Same-day email replies</p>
           </div>
 
@@ -33,8 +33,8 @@ export default function ContactInfoSection() {
               </svg>
             </div>
             <h3 className="text-xl font-semibold text-white mb-2">Coverage Zone</h3>
-            <p className="text-white font-semibold">Greater Sacramento</p>
-            <p className="text-sm text-white">Sacramento, Folsom, Roseville, Elk Grove</p>
+            <p className="text-white font-semibold">Greater Santa Monica</p>
+            <p className="text-sm text-white">Santa Monica, Venice, Brentwood, Pacific Palisades</p>
           </div>
         </div>
       </div>

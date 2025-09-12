@@ -1,6 +1,6 @@
-# Sac Maids - Professional Cleaning Services
+# Santa Monica Maids - Professional Cleaning Services
 
-A clean, modern website for Sac Maids professional house cleaning services serving Sacramento, California.
+A clean, modern website for Santa Monica Maids professional house cleaning services serving Santa Monica, California.
 
 ## What This Site Is
 
@@ -15,13 +15,13 @@ A **simple, focused cleaning website** with:
 
 ### Customer Experience
 - **Instant Quotes** - Get pricing in 60 seconds
-- **Service Areas** - Sacramento coverage map
+- **Service Areas** - Santa Monica coverage map
 - **Service Details** - Complete cleaning task breakdown
 - **Easy Contact** - Phone, email, and form options
 - **Mobile Responsive** - Works perfectly on all devices
 
 ### Design & Branding
-- **Brand**: Sac Maids (Sacramento focused)
+- **Brand**: Santa Monica Maids (Santa Monica focused)
 - **Colors**: Dark blue backgrounds with gold accents
 - **Typography**: Clean, professional fonts
 - **Video Hero** - Engaging background video
@@ -38,10 +38,10 @@ A **simple, focused cleaning website** with:
 ## Service Information
 
 ### Location
-- **Primary**: Sacramento, California
-- **Areas**: Sacramento, Folsom, Roseville, Elk Grove
-- **Contact**: (916) 680-5200 | hello@sacmaids.com
-- **Address**: 1225 J Street, Sacramento, CA 95814
+- **Primary**: Santa Monica, California
+- **Areas**: Santa Monica, Venice, Brentwood, Pacific Palisades
+- **Contact**: (310) 555-0123 | hello@santamonicamaids.com
+- **Address**: 1234 Ocean Avenue, Santa Monica, CA 90401
 
 ### Services Offered
 - Standard Cleaning
@@ -54,10 +54,10 @@ A **simple, focused cleaning website** with:
 
 ### Complete Rebrand
 - Company name updated throughout
-- Location focused on Sacramento, CA market  
+- Location focused on Santa Monica, CA market  
 - Contact information updated
 - Service areas completely revised
-- SEO metadata updated for Sacramento market
+- SEO metadata updated for Santa Monica market
 - Schema.org structured data updated
 
 ### System Simplification
@@ -76,11 +76,11 @@ A **simple, focused cleaning website** with:
 - Consistent dark blue theme throughout
 
 ### Content Updates
-- FAQ updated for Sacramento area
+- FAQ updated for Santa Monica area
 - Service areas section rebuilt for California market
 - Contact information updated for local market
-- Announcement bar updated for Sacramento
-- All branding updated to Sac Maids
+- Announcement bar updated for Santa Monica
+- All branding updated to Santa Monica Maids
 
 ## Current Site Structure
 
@@ -97,7 +97,7 @@ src/
 │   ├── HeroSection.tsx           # Hero with video background
 │   ├── ServicesSection.tsx       # Services overview
 │   ├── WhatWeCleanSection.tsx    # Detailed service breakdown
-│   ├── AreasWeServeSection.tsx   # Sacramento coverage
+│   ├── AreasWeServeSection.tsx   # Santa Monica coverage
 │   ├── ReviewsSection.tsx        # Customer reviews
 │   ├── FAQSection.tsx           # Frequently asked questions
 │   ├── ContactSection.tsx       # Contact form
@@ -136,7 +136,7 @@ Quote forms submit to Formspree for lead collection. No database or backend requ
 
 ## SEO Features
 
-- **Meta tags** optimized for Sacramento market
+- **Meta tags** optimized for Santa Monica market
 - **Schema.org markup** for local business
 - **Sitemap** generation
 - **Open Graph** social sharing
@@ -148,4 +148,4 @@ Quote forms submit to Formspree for lead collection. No database or backend requ
 
 This is a **simplified, clean website** focused purely on customer acquisition and information. All CRM, admin, and backend functionality has been removed to create a lean, fast-loading site perfect for a local cleaning business.
 
-**Contact**: hello@sacmaids.com for any questions.
+**Contact**: hello@santamonicamaids.com for any questions.

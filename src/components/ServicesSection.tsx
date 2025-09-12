@@ -109,7 +109,7 @@ export default function ServicesSection() {
   const services = [
     {
       id: 'standard',
-      title: "Routine Clean",
+      title: "Standard Clean",
       description: "Weekly or bi-weekly maintenance for busy households.",
       features: [
         `${taskCounts.routine} detailed tasks`,
@@ -124,7 +124,7 @@ export default function ServicesSection() {
     },
     {
       id: 'deep',
-      title: "Complete Deep Clean", 
+      title: "Deep Clean", 
       description: "Comprehensive service with meticulous attention to detail.",
       features: [
         `${taskCounts.deep} thorough tasks`,
@@ -135,11 +135,11 @@ export default function ServicesSection() {
       priceNote: "/visit",
       buttonText: "Book now",
       badgeText: "Popular", 
-      badgeColor: "bg-pine-button-light"
+      badgeColor: "bg-sm-button-light"
     },
     {
       id: 'moveout',
-      title: "Move-In/Move-Out Service",
+      title: "Move Out Clean",
       description: "Total property refresh including interior storage spaces.",
       features: [
         `${taskCounts.moveInOut} comprehensive tasks`,
@@ -162,7 +162,7 @@ export default function ServicesSection() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-[#CEC28D] mb-4">
-              Sacramento Cleaning Packages
+              Cleaning Services by Santa Monica Maids
             </h2>
             <p className="text-sm sm:text-base text-white/70 max-w-3xl mx-auto">
               Select the ideal residential cleaning solution tailored for your lifestyle.
@@ -186,7 +186,7 @@ export default function ServicesSection() {
                 <div className="space-y-3 mb-6">
                   {service.features.map((feature, featureIndex) => (
                     <div key={featureIndex} className="flex items-center text-xs sm:text-sm text-white/90">
-                      <svg className="w-3.5 h-3.5 text-pine-button-light mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <svg className="w-3.5 h-3.5 text-sm-button-light mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
                       {feature}

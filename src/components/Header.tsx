@@ -70,13 +70,13 @@ export default function Header() {
                   <Link href="/" className="flex items-center">
                     <Image
                       src="/logo.png"
-                      alt="Sac Maids"
+                      alt="Santa Monica Maids"
                       width={240}
                       height={80}
                       className="h-16 w-auto"
                       priority
                     />
-                    <span className="sr-only">Sac Maids</span>
+                    <span className="sr-only">Santa Monica Maids</span>
                   </Link>
                 </div>
 
@@ -144,13 +144,13 @@ export default function Header() {
                   <Link href="/">
                     <Image
                       src="/logo.png"
-                      alt="Sac Maids"
+                      alt="Santa Monica Maids"
                       width={120}
                       height={40}
                       className="h-8 w-auto object-contain"
                       priority
                     />
-                    <span className="sr-only">Sac Maids</span>
+                    <span className="sr-only">Santa Monica Maids</span>
                   </Link>
                 </div>
 

@@ -12,7 +12,7 @@ export default function RefundPolicy() {
 
           <section className="mb-12">
             <h2 className="text-2xl font-semibold text-[#CEC28D] mb-4">Our Guarantee</h2>
-            <p className="text-white/90 mb-4">At Sac Maids, we stand behind our work with a 100% satisfaction guarantee. If you&apos;re not completely satisfied with our cleaning service, we will:</p>
+            <p className="text-white/90 mb-4">At Santa Monica Maids, we stand behind our work with a 100% satisfaction guarantee. If you&apos;re not completely satisfied with our cleaning service, we will:</p>
             <ul className="list-disc pl-6 mb-4 text-white/80 space-y-2">
               <li>Return to your home within 24 hours to re-clean any areas you&apos;re not happy with</li>
               <li>Offer a full refund if you&apos;re still not satisfied after our re-cleaning service</li>
@@ -52,8 +52,8 @@ export default function RefundPolicy() {
           <section className="mb-12">
             <h2 className="text-2xl font-semibold text-[#CEC28D] mb-4">Contact Us</h2>
             <p className="text-white/90">For refunds or to report service issues:</p>
-            <p className="text-white/90">Email: support@sacmaids.com</p>
-            <p className="text-white/90">Phone: (916) 680-5200</p>
+            <p className="text-white/90">Email: support@santamonicamaids.com</p>
+            <p className="text-white/90">Phone: (310) 555-0123</p>
           </section>
         </div>
       </div>

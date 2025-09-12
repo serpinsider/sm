@@ -7,25 +7,25 @@ const reviews = [
   {
     id: 1,
     name: "Jessica R.",
-    location: "Tampa, FL",
+    location: "Santa Monica, CA",
     rating: 5,
-    text: "Best cleaning service in Tampa! My house sparkles every time. Professional, thorough, and always on time.",
+    text: "Best cleaning service in Santa Monica! My house sparkles every time. Professional, thorough, and always on time.",
     date: "2 days ago",
     image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=face&auto=format&q=80"
   },
   {
     id: 2,
     name: "Mike T.",
-    location: "St. Petersburg, FL",
+    location: "Roseville, CA",
     rating: 5,
-    text: "Exceeded expectations! Attention to detail is amazing. Best cleaning service I've used in St. Pete.",
+    text: "Exceeded expectations! Attention to detail is amazing. Best cleaning service I've used in Roseville.",
     date: "1 week ago",
     image: "https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=150&h=150&fit=crop&crop=face&auto=format&q=80"
   },
   {
     id: 3,
     name: "Amanda K.",
-    location: "Clearwater, FL",
+    location: "Elk Grove, CA",
     rating: 5,
     text: "Reliable, trustworthy, and efficient. They make my home feel brand new every visit!",
     date: "3 days ago",
@@ -34,7 +34,7 @@ const reviews = [
   {
     id: 4,
     name: "Chris L.",
-    location: "Lutz, FL",
+    location: "Folsom, CA",
     rating: 5,
     text: "Perfect for my busy schedule. They're thorough, professional, and great value for money.",
     date: "5 days ago",
@@ -43,7 +43,7 @@ const reviews = [
   {
     id: 5,
     name: "Sarah M.",
-    location: "Tampa, FL",
+    location: "Davis, CA",
     rating: 5,
     text: "Love their cleaning service! My home is always spotless and fresh. Highly recommend!",
     date: "1 week ago",
@@ -52,7 +52,7 @@ const reviews = [
   {
     id: 6,
     name: "David W.",
-    location: "St. Petersburg, FL",
+    location: "Santa Monica, CA",
     rating: 5,
     text: "Outstanding service! They go above and beyond every time. Worth every penny.",
     date: "4 days ago",
@@ -80,10 +80,10 @@ export default function ReviewsSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
                       <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-[#CEC28D] mb-4">
-            Sacramento Client Reviews
+            Santa Monica Client Reviews
           </h2>
                       <p className="text-sm sm:text-base text-white/70 max-w-3xl mx-auto">
-              Discover why Sacramento residents choose Sac Maids for their home cleaning needs.
+              Discover why Santa Monica residents choose Santa Monica Maids for their home cleaning needs.
             </p>
         </div>
 

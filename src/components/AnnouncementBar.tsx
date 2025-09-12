@@ -9,7 +9,7 @@ const AnnouncementBar = () => {
 
   const messages = [
     'Save 10% on your first 3 bookings!',
-    "Serving all of Sacramento!",
+    "Serving all of Santa Monica!",
     "Ask about recurring plans!"
   ];
 
