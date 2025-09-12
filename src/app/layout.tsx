@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     siteName: "Santa Monica Maids",
     images: [
       {
-        url: "/ogs-image.gif",
+        url: "/ogs-image.png",
         width: 1200,
         height: 630,
         alt: "Santa Monica Maids - Professional House Cleaning Services",
@@ -76,7 +76,7 @@ export const metadata: Metadata = {
     title: "Santa Monica Maids - Professional House Cleaning Service - Santa Monica",
     description: "Professional house cleaning service in Santa Monica, California. Reliable, insured, trusted residential cleaning. Get your free quote today!",
     creator: "@santamonicamaids",
-    images: ["/ogs-image.gif"],
+    images: ["/ogs-image.png"],
   },
   verification: {
     google: "your-google-verification-code",
