@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://santamonicamaids.com'),
   title: {
     default: "Santa Monica Maids | Professional House Cleaning Services - Santa Monica",
-    template: "%s | Santa Monica Maids - Professional Cleaning"
+    template: "%s - Santa Monica Maids - Professional Cleaning"
   },
   description: "Professional house cleaning in Santa Monica. Licensed & insured maids, 100% satisfaction guarantee. Book your trusted cleaning service in Santa Monica, Venice, Brentwood & Pacific Palisades today!",
   keywords: [
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://santamonicamaids.com",
-    title: "Santa Monica Maids - Professional House Cleaning Service | Santa Monica",
+    title: "Santa Monica Maids - Professional House Cleaning Service - Santa Monica",
     description: "Professional house cleaning service in Santa Monica, California. Reliable, insured, and trusted residential cleaning with free quotes.",
     siteName: "Santa Monica Maids",
     images: [
@@ -73,7 +73,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Santa Monica Maids - Professional House Cleaning Service | Santa Monica",
+    title: "Santa Monica Maids - Professional House Cleaning Service - Santa Monica",
     description: "Professional house cleaning service in Santa Monica, California. Reliable, insured, trusted residential cleaning. Get your free quote today!",
     creator: "@santamonicamaids",
     images: ["/ogs-image.jpg"],

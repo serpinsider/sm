@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import QuoteForm from '@/components/QuoteForm';
 
 export const metadata: Metadata = {
-  title: 'Get Your Quote | Santa Monica Maids',
+  title: 'Get Your Quote - Santa Monica Maids',
   description: 'Get an instant, accurate quote for professional house cleaning services. Fast, easy, and no obligations. Serving Santa Monica, California.',
   keywords: [
     'house cleaning quote',
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     'cleaning pricing'
   ],
   openGraph: {
-    title: 'Get Your Quote | Santa Monica Maids',
+    title: 'Get Your Quote - Santa Monica Maids',
     description: 'Get an instant quote for your professional home cleaning service. Choose your cleaning type, customize your needs, and let Santa Monica Maids take care of the rest.',
     url: 'https://santamonicamaids.com/quote',
     siteName: 'Santa Monica Maids',

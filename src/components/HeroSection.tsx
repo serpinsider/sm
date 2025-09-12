@@ -43,10 +43,15 @@ export default function HeroSection() {
         muted
         loop
         playsInline
+        preload="auto"
         className="absolute inset-0 w-full h-full object-cover"
+        onError={(e) => console.error('Video failed to load:', e)}
+        onLoadStart={() => console.log('Video loading started')}
+        onCanPlay={() => console.log('Video can play')}
       >
         <source src="/hero-vid.mp4" type="video/mp4" />
         {/* Fallback for browsers that don't support video */}
+        Your browser does not support the video tag.
       </video>
       
       {/* Dark overlay for better text readability */}
