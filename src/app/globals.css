@@ -12,8 +12,8 @@
   --santa-monica-500: #475569;
   --santa-monica-600: #334155;
   --santa-monica-700: #1e293b;
-  --santa-monica-800: #0f172a;
-  --santa-monica-900: #020617;
+  --santa-monica-800: #244042;
+  --santa-monica-900: #1a2f31;
   
   /* Button system */
   --primary-button-bg: #0C6F47;
@@ -30,7 +30,7 @@
   --tertiary-button-border: #CEC28D;
   --tertiary-button-hover-bg: rgba(206, 194, 141, 0.1);
   
-  --quaternary-button-bg: rgba(206, 194, 141, 0.8);
+  --quaternary-button-bg: #cec28dcc;
   --quaternary-button-text: #0f172a;
   --quaternary-button-hover-bg: rgba(206, 194, 141, 0.9);
 

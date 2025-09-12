@@ -36,7 +36,7 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section className="relative pt-48 pb-32 lg:pt-64 lg:pb-48 overflow-hidden bg-gradient-to-br from-slate-900 to-slate-800">
+    <section className="relative pt-48 pb-32 lg:pt-64 lg:pb-48 overflow-hidden bg-gradient-to-br from-[#244042] to-[#1a2f31]">
       {/* Background Video */}
       <video
         autoPlay

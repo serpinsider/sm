@@ -217,7 +217,7 @@ export default function QuoteForm() {
   return (
     <div className="w-full max-w-full sm:container mx-auto px-4 pt-48 pb-12">
       <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
-        <div className="lg:col-span-2 bg-slate-800/50 backdrop-blur-md p-8 rounded-xl shadow-xl border border-white/10">
+        <div className="lg:col-span-2 bg-[#244042]/80 backdrop-blur-md p-8 rounded-xl shadow-xl border border-white/10">
           <h1 className="text-3xl md:text-4xl font-serif font-bold text-white mb-4">Get a free quote instantly!</h1>
           <p className="text-white/80 mb-6">
             Fill out the form and we&apos;ll send you a detailed quote.
@@ -232,7 +232,7 @@ export default function QuoteForm() {
                 <input
                   type="text"
                   placeholder="ex. Jane"
-                  className="w-full p-3 border border-white/20 rounded-lg bg-slate-900/50 text-white placeholder-white/50 focus:border-[#968642] focus:ring-1 focus:ring-[#968642]"
+                  className="w-full p-3 border border-white/20 rounded-lg bg-[#1a2f31]/70 text-white placeholder-white/50 focus:border-[#968642] focus:ring-1 focus:ring-[#968642]"
                   value={formData.firstName}
                   onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
                 />
@@ -244,7 +244,7 @@ export default function QuoteForm() {
                 <input
                   type="text"
                   placeholder="ex. Smith"
-                  className="w-full p-3 border border-white/20 rounded-lg bg-slate-900/50 text-white placeholder-white/50 focus:border-[#968642] focus:ring-1 focus:ring-[#968642]"
+                  className="w-full p-3 border border-white/20 rounded-lg bg-[#1a2f31]/70 text-white placeholder-white/50 focus:border-[#968642] focus:ring-1 focus:ring-[#968642]"
                   value={formData.lastName}
                   onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
                 />
@@ -260,7 +260,7 @@ export default function QuoteForm() {
                   <input
                     type="email"
                     placeholder="email@example.com"
-                    className={`w-full p-3 border rounded-lg bg-slate-900/50 text-white placeholder-white/50 focus:border-[#968642] focus:ring-1 focus:ring-[#968642] ${
+                    className={`w-full p-3 border rounded-lg bg-[#1a2f31]/70 text-white placeholder-white/50 focus:border-[#968642] focus:ring-1 focus:ring-[#968642] ${
                       formData.email && !isValidEmail(formData.email) 
                         ? 'border-red-500' 
                         : 'border-white/20'
@@ -281,7 +281,7 @@ export default function QuoteForm() {
                   <input
                     type="tel"
                     placeholder="(916) 680-5200"
-                    className={`w-full p-3 border rounded-lg bg-slate-900/50 text-white placeholder-white/50 focus:border-[#968642] focus:ring-1 focus:ring-[#968642] ${
+                    className={`w-full p-3 border rounded-lg bg-[#1a2f31]/70 text-white placeholder-white/50 focus:border-[#968642] focus:ring-1 focus:ring-[#968642] ${
                       formData.phone && !isValidPhone(formData.phone) 
                         ? 'border-red-500' 
                         : 'border-white/20'
@@ -308,7 +308,7 @@ export default function QuoteForm() {
                 <select
                   value={formData.bedrooms}
                   onChange={(e) => setFormData({ ...formData, bedrooms: e.target.value })}
-                  className="w-full p-3 border border-white/20 rounded-lg bg-slate-900/50 text-white appearance-none focus:border-[#968642] focus:ring-1 focus:ring-[#968642]"
+                  className="w-full p-3 border border-white/20 rounded-lg bg-[#1a2f31]/70 text-white appearance-none focus:border-[#968642] focus:ring-1 focus:ring-[#968642]"
                 >
                   <option value="Studio">Studio</option>
                   <option value="1">1 Bedroom</option>
@@ -325,7 +325,7 @@ export default function QuoteForm() {
                 <select
                   value={formData.bathrooms}
                   onChange={(e) => setFormData({ ...formData, bathrooms: e.target.value })}
-                  className="w-full p-3 border border-white/20 rounded-lg bg-slate-900/50 text-white appearance-none focus:border-[#968642] focus:ring-1 focus:ring-[#968642]"
+                  className="w-full p-3 border border-white/20 rounded-lg bg-[#1a2f31]/70 text-white appearance-none focus:border-[#968642] focus:ring-1 focus:ring-[#968642]"
                 >
                   <option value="1">1 Bathroom</option>
                   <option value="1.5">1.5 Bathrooms</option>
@@ -346,7 +346,7 @@ export default function QuoteForm() {
                 <select
                   value={formData.frequency}
                   onChange={(e) => setFormData({ ...formData, frequency: e.target.value })}
-                  className="w-full p-3 border border-white/20 rounded-lg bg-slate-900/50 text-white appearance-none focus:border-[#968642] focus:ring-1 focus:ring-[#968642]"
+                  className="w-full p-3 border border-white/20 rounded-lg bg-[#1a2f31]/70 text-white appearance-none focus:border-[#968642] focus:ring-1 focus:ring-[#968642]"
                 >
                   <option value="One Time">One Time</option>
                   <option value="Weekly">Weekly (Save 10%)</option>
@@ -361,7 +361,7 @@ export default function QuoteForm() {
                 <select
                   value={formData.squareFootage}
                   onChange={(e) => setFormData({ ...formData, squareFootage: e.target.value })}
-                  className="w-full p-3 border border-white/20 rounded-lg bg-slate-900/50 text-white appearance-none focus:border-[#968642] focus:ring-1 focus:ring-[#968642]"
+                  className="w-full p-3 border border-white/20 rounded-lg bg-[#1a2f31]/70 text-white appearance-none focus:border-[#968642] focus:ring-1 focus:ring-[#968642]"
                 >
                   <option value="Under 1,000 sqft">Under 1,000 sqft</option>
                   <option value="1,000-2,000 sqft">1,000-2,000 sqft</option>
@@ -520,7 +520,7 @@ export default function QuoteForm() {
           </div>
         </div>
 
-        <div className="bg-slate-800/50 backdrop-blur-md p-8 rounded-xl shadow-xl border border-white/10">
+        <div className="bg-[#244042]/80 backdrop-blur-md p-8 rounded-xl shadow-xl border border-white/10">
 
 
           <div className="space-y-8">
