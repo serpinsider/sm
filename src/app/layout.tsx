@@ -17,7 +17,7 @@ const merriweather = Merriweather({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://santamonicamaids.com'),
+  metadataBase: new URL('https://smmaids.com'),
   title: {
     default: "Santa Monica Maids - Professional House Cleaning",
     template: "%s - Santa Monica Maids"
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://santamonicamaids.com",
+    url: "https://smmaids.com",
     title: "Santa Monica Maids - Professional House Cleaning",
     description: "Professional house cleaning service in Santa Monica, California. Reliable, insured, and trusted residential cleaning with free quotes.",
     siteName: "Santa Monica Maids",
@@ -84,7 +84,7 @@ export const metadata: Metadata = {
     yahoo: "your-yahoo-verification-code",
   },
   alternates: {
-    canonical: "https://santamonicamaids.com",
+    canonical: "https://smmaids.com",
   },
   icons: {
     icon: '/favicon.ico',

@@ -52,7 +52,7 @@ export default function RefundPolicy() {
           <section className="mb-12">
             <h2 className="text-2xl font-semibold text-[#CEC28D] mb-4">Contact Us</h2>
             <p className="text-white/90">For refunds or to report service issues:</p>
-            <p className="text-white/90">Email: support@santamonicamaids.com</p>
+            <p className="text-white/90">Email: support@smmaids.com</p>
             <p className="text-white/90">Phone: (310) 555-0123</p>
           </section>
         </div>

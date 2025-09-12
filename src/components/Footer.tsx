@@ -21,7 +21,7 @@ export default function Footer() {
             />
             <div className="space-y-2 text-sm">
               <p className="text-white/80">(310) 555-0123</p>
-              <p className="text-white/80">hello@santamonicamaids.com</p>
+              <p className="text-white/80">hello@smmaids.com</p>
               <p className="text-white/80">1234 Ocean Avenue, Santa Monica, CA 90401</p>
             </div>
           </div>

@@ -64,7 +64,7 @@ export default function PrivacyPolicy() {
           <section className="mb-12">
             <h2 className="text-2xl font-semibold text-[#CEC28D] mb-4">Contact Us</h2>
             <p className="text-white/90">If you have questions about our privacy practices, please contact us at:</p>
-            <p className="text-white/90">Email: privacy@santamonicamaids.com</p>
+            <p className="text-white/90">Email: privacy@smmaids.com</p>
             <p className="text-white/90">Phone: (310) 555-0123</p>
           </section>
         </div>

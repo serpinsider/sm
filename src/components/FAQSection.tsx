@@ -29,7 +29,7 @@ export default function FAQSection() {
     },
     {
       question: "What's your rescheduling and cancellation policy?",
-      answer: "Appointment changes are penalty-free with 24+ hours notice. Same-day modifications may incur fees. Reach our Santa Monica team at (310) 555-0123 or hello@santamonicamaids.com for any scheduling adjustments.",
+      answer: "Appointment changes are penalty-free with 24+ hours notice. Same-day modifications may incur fees. Reach our Santa Monica team at (310) 555-0123 or hello@smmaids.com for any scheduling adjustments.",
     },
     {
       question: "How do you guarantee service quality and reliability?",

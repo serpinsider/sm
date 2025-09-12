@@ -11,10 +11,10 @@ async function main() {
 
   // Create Admin User
   const adminUser = await prisma.user.upsert({
-    where: { email: 'admin@santamonicamaids.com' },
+    where: { email: 'admin@smmaids.com' },
     update: {},
     create: {
-      email: 'admin@santamonicamaids.com',
+      email: 'admin@smmaids.com',
       firstName: 'Admin',
       lastName: 'User',
       password: hashedPassword,
@@ -27,10 +27,10 @@ async function main() {
 
   // Create Provider User
   const providerUser = await prisma.user.upsert({
-    where: { email: 'provider@santamonicamaids.com' },
+    where: { email: 'provider@smmaids.com' },
     update: {},
     create: {
-      email: 'provider@santamonicamaids.com',
+      email: 'provider@smmaids.com',
       firstName: 'Sarah',
       lastName: 'Provider',
       password: hashedPassword,
@@ -64,10 +64,10 @@ async function main() {
 
   // Create Customer User
   const customerUser = await prisma.user.upsert({
-    where: { email: 'customer@santamonicamaids.com' },
+    where: { email: 'customer@smmaids.com' },
     update: {},
     create: {
-      email: 'customer@santamonicamaids.com',
+      email: 'customer@smmaids.com',
       firstName: 'John',
       lastName: 'Customer',
       password: hashedPassword,
@@ -173,17 +173,17 @@ async function main() {
   console.log('\n📋 Test Login Credentials:');
   console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
   console.log('👑 ADMIN (CRM Access):');
-  console.log('   Email: admin@santamonicamaids.com');
+  console.log('   Email: admin@smmaids.com');
   console.log('   Password: password123');
   console.log('   URL: /crm');
   console.log('');
   console.log('🧹 PROVIDER:');
-  console.log('   Email: provider@santamonicamaids.com');
+  console.log('   Email: provider@smmaids.com');
   console.log('   Password: password123');
   console.log('   URL: /provider');
   console.log('');
   console.log('👤 CUSTOMER:');
-  console.log('   Email: customer@santamonicamaids.com');
+  console.log('   Email: customer@smmaids.com');
   console.log('   Password: password123');
   console.log('   URL: /account');
   console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');

@@ -1,7 +1,7 @@
 // Location-specific configuration
 export const LOCATION_DETAILS = {
-  'xjkoaljr': { name: 'Santa Monica Maids', domain: 'santamonicamaids.com', agent: 'Sarah' },
-  'default': { name: 'Santa Monica Maids', domain: 'santamonicamaids.com', agent: 'Sarah' }
+  'xjkoaljr': { name: 'Santa Monica Maids', domain: 'smmaids.com', agent: 'Sarah' },
+  'default': { name: 'Santa Monica Maids', domain: 'smmaids.com', agent: 'Sarah' }
 };
 
 // Pricing configuration

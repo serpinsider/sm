@@ -15,11 +15,11 @@ export default function StructuredData({ type, data }: StructuredDataProps) {
           "@context": "https://schema.org",
           "@type": "LocalBusiness",
           "name": "Santa Monica Maids",
-          "image": "https://santamonicamaids.com/logo.png",
+          "image": "https://smmaids.com/logo.png",
           "description": "Professional house cleaning services serving Santa Monica and surrounding areas. Reliable, thorough, and trusted cleaning for your home.",
-          "url": "https://santamonicamaids.com",
+          "url": "https://smmaids.com",
           "telephone": "+19166805200",
-          "email": "hello@santamonicamaids.com",
+          "email": "hello@smmaids.com",
           "address": {
             "@type": "PostalAddress",
             "addressCountry": "US",
@@ -80,8 +80,8 @@ export default function StructuredData({ type, data }: StructuredDataProps) {
           "@context": "https://schema.org",
           "@type": "Organization",
           "name": "Santa Monica Maids",
-          "url": "https://santamonicamaids.com",
-          "logo": "https://santamonicamaids.com/logo.png",
+          "url": "https://smmaids.com",
+          "logo": "https://smmaids.com/logo.png",
           "description": "Professional house cleaning services across New England and Mid-Atlantic states.",
           "contactPoint": {
             "@type": "ContactPoint",
@@ -103,14 +103,14 @@ export default function StructuredData({ type, data }: StructuredDataProps) {
           "@context": "https://schema.org",
           "@type": "WebSite",
           "name": "Santa Monica Maids",
-          "alternateName": ["SM", "Santa Monica Maids Cleaning", "santamonicamaids.com"],
-          "url": "https://santamonicamaids.com",
+          "alternateName": ["SM", "Santa Monica Maids Cleaning", "smmaids.com"],
+          "url": "https://smmaids.com",
           "description": "Professional house cleaning services across Santa Monica, California",
           "potentialAction": {
             "@type": "SearchAction",
             "target": {
               "@type": "EntryPoint",
-              "urlTemplate": "https://santamonicamaids.com/search?q={search_term_string}"
+              "urlTemplate": "https://smmaids.com/search?q={search_term_string}"
             },
             "query-input": "required name=search_term_string"
           }
@@ -172,7 +172,7 @@ export default function StructuredData({ type, data }: StructuredDataProps) {
           "provider": {
             "@type": "LocalBusiness",
             "name": "Santa Monica Maids",
-            "url": "https://santamonicamaids.com"
+            "url": "https://smmaids.com"
           },
           "serviceType": "House Cleaning",
           "description": `Professional house cleaning and maid services${data?.location ? ` in ${data.location}` : ''}. Regular cleaning, deep cleaning, move-out cleaning, and specialty services.`,

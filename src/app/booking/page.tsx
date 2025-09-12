@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Book Your Cleaning - Santa Monica Maids',
     description: 'Book your professional home cleaning service in minutes. Choose your cleaning type, schedule your preferred date and time, and let Santa Monica Maids take care of the rest.',
-    url: 'https://santamonicamaids.com/booking',
+    url: 'https://smmaids.com/booking',
     siteName: 'Santa Monica Maids',
     images: [
       {
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://santamonicamaids.com/booking',
+    canonical: 'https://smmaids.com/booking',
   },
 };
 

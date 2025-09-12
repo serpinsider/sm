@@ -21,7 +21,7 @@ export default function ContactInfoSection() {
               </svg>
             </div>
             <h3 className="text-xl font-semibold text-white mb-2">Digital Contact</h3>
-            <p className="text-white font-semibold">hello@santamonicamaids.com</p>
+            <p className="text-white font-semibold">hello@smmaids.com</p>
             <p className="text-sm text-white">Same-day email replies</p>
           </div>
 

@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Get Your Quote - Santa Monica Maids',
     description: 'Get an instant quote for your professional home cleaning service. Choose your cleaning type, customize your needs, and let Santa Monica Maids take care of the rest.',
-    url: 'https://santamonicamaids.com/quote',
+    url: 'https://smmaids.com/quote',
     siteName: 'Santa Monica Maids',
     images: [
       {
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://santamonicamaids.com/quote',
+    canonical: 'https://smmaids.com/quote',
   },
 };
 

@@ -40,7 +40,7 @@ A **simple, focused cleaning website** with:
 ### Location
 - **Primary**: Santa Monica, California
 - **Areas**: Santa Monica, Venice, Brentwood, Pacific Palisades
-- **Contact**: (310) 555-0123 | hello@santamonicamaids.com
+- **Contact**: (310) 555-0123 | hello@smmaids.com
 - **Address**: 1234 Ocean Avenue, Santa Monica, CA 90401
 
 ### Services Offered
@@ -148,4 +148,4 @@ Quote forms submit to Formspree for lead collection. No database or backend requ
 
 This is a **simplified, clean website** focused purely on customer acquisition and information. All CRM, admin, and backend functionality has been removed to create a lean, fast-loading site perfect for a local cleaning business.
 
-**Contact**: hello@santamonicamaids.com for any questions.
+**Contact**: hello@smmaids.com for any questions.
