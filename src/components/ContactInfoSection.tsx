@@ -1,6 +1,6 @@
 export default function ContactInfoSection() {
   return (
-    <section className="py-20" style={{background: 'rgba(15, 23, 42, 0.95)'}}>
+    <section className="py-20" style={{background: 'rgba(36, 64, 66, 0.95)'}}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
           <div className="text-center">

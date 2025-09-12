@@ -46,7 +46,7 @@ export const metadata: Metadata = {
 
 export default function QuotePage() {
   return (
-    <main className="min-h-screen bg-[#0f172a]">
+    <main className="min-h-screen bg-[#244042]">
       <QuoteForm />
     </main>
   );

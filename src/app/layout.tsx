@@ -112,7 +112,7 @@ export default function RootLayout({
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png" />
         {/* Fathom - beautiful, simple website analytics */}
-        <script src="https://cdn.usefathom.com/script.js" data-site="ELAPZTGP" defer></script>
+        <script src="https://cdn.usefathom.com/script.js" data-site="KXCGRWFC" defer></script>
         {/* / Fathom */}
 
       </head>

@@ -43,7 +43,7 @@ export default function Header() {
             className="relative w-full transition-all duration-700 ease-in-out"
             style={{ 
               height: scrollProgress > 0.1 ? "64px" : "96px",
-              background: scrollProgress > 0.1 ? `rgba(15, 23, 42, 0.85)` : 'transparent',
+              background: scrollProgress > 0.1 ? `rgba(36, 64, 66, 0.85)` : 'transparent',
               backdropFilter: scrollProgress > 0.1 ? 'blur(12px)' : 'none',
               borderBottom: scrollProgress > 0.1 ? '1px solid rgba(255, 255, 255, 0.1)' : 'none'
             }}
@@ -132,7 +132,7 @@ export default function Header() {
           <div 
             className="relative w-full transition-all duration-700 ease-in-out"
             style={{ 
-              background: scrollProgress > 0.1 ? `rgba(15, 23, 42, 0.85)` : 'transparent',
+              background: scrollProgress > 0.1 ? `rgba(36, 64, 66, 0.85)` : 'transparent',
               backdropFilter: scrollProgress > 0.1 ? 'blur(12px)' : 'none',
               borderBottom: scrollProgress > 0.1 ? '1px solid rgba(255, 255, 255, 0.1)' : 'none'
             }}
@@ -181,7 +181,7 @@ export default function Header() {
             }`}
             style={{
               top: '112px', // Account for announcement bar + header
-              background: 'rgba(15, 23, 42, 0.98)',
+              background: 'rgba(36, 64, 66, 0.98)',
               backdropFilter: 'blur(12px)',
               borderBottom: '1px solid rgba(255, 255, 255, 0.1)',
             }}

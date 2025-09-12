@@ -158,7 +158,7 @@ export default function ServicesSection() {
 
   return (
     <>
-      <section id="services" className="py-20" style={{background: 'rgba(15, 23, 42, 0.9)'}}>
+      <section id="services" className="py-20" style={{background: 'rgba(36, 64, 66, 0.9)'}}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-[#CEC28D] mb-4">
@@ -171,7 +171,7 @@ export default function ServicesSection() {
 
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {services.map((service) => (
-              <div key={service.id} className="bg-[rgba(15,23,42,0.95)] backdrop-blur-md rounded-xl shadow-xl border border-white/10 p-8 hover:bg-[rgba(15,23,42,0.98)] hover:shadow-2xl hover:shadow-black/30 transition-all relative flex flex-col h-full">
+              <div key={service.id} className="bg-[rgba(36,64,66,0.95)] backdrop-blur-md rounded-xl shadow-xl border border-white/10 p-8 hover:bg-[rgba(36,64,66,0.98)] hover:shadow-2xl hover:shadow-black/30 transition-all relative flex flex-col h-full">
 
                 
                 <div className="text-center mb-6 flex-grow pt-4">

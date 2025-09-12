@@ -387,12 +387,12 @@ export default function QuoteForm() {
                     onClick={() => handleServiceTypeChange(id)}
                     className={`relative cursor-pointer group ${
                       formData.serviceType === id
-                        ? 'ring-2 ring-[rgba(15,23,42,1)] animate-glow border-[0.5px] border-white animate-selected-pulse'
+                        ? 'ring-2 ring-[rgba(36,64,66,1)] animate-glow border-[0.5px] border-white animate-selected-pulse'
                         : 'ring-1 ring-white/20 hover:ring-2 hover:ring-white/40'
                     } rounded-lg p-6 flex flex-col items-center justify-center text-center transition-all ${
                       formData.serviceType === id ? 'bg-white/40' : 'bg-white/10'
                     } backdrop-blur-sm`}
-                    style={formData.serviceType === id ? {boxShadow: '0 0 20px rgba(15, 23, 42, 0.3)'} : {}}
+                    style={formData.serviceType === id ? {boxShadow: '0 0 20px rgba(36, 64, 66, 0.3)'} : {}}
                     onMouseEnter={(e) => {
                       if (formData.serviceType !== id) {
                         e.currentTarget.style.boxShadow = '0 0 15px rgba(255, 255, 255, 0.2)';
@@ -464,9 +464,9 @@ export default function QuoteForm() {
                     />
                     <div className={`w-full p-3 rounded-lg text-center text-white transition-all backdrop-blur-sm ${
                       formData.addons[addon.key as keyof typeof formData.addons]
-                        ? 'ring-2 ring-[rgba(15,23,42,1)] bg-white/40 animate-glow font-semibold border-[0.5px] border-white animate-selected-pulse'
+                        ? 'ring-2 ring-[rgba(36,64,66,1)] bg-white/40 animate-glow font-semibold border-[0.5px] border-white animate-selected-pulse'
                         : 'ring-1 ring-white/20 bg-white/10 hover:ring-2 hover:ring-white/40'
-                    }`} style={formData.addons[addon.key as keyof typeof formData.addons] ? {boxShadow: '0 0 20px rgba(15, 23, 42, 0.3)'} : {}}>
+                    }`} style={formData.addons[addon.key as keyof typeof formData.addons] ? {boxShadow: '0 0 20px rgba(36, 64, 66, 0.3)'} : {}}>
                       <div className="flex flex-col gap-2">
                         <div className="w-8 h-8 mx-auto">
                           <Image

@@ -109,7 +109,7 @@ export default function WhatWeCleanSection() {
   ];
 
   return (
-    <section id="what-we-clean" className="py-20" style={{background: 'rgba(15, 23, 42, 0.95)'}}>
+    <section id="what-we-clean" className="py-20" style={{background: 'rgba(36, 64, 66, 0.95)'}}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-[#CEC28D] mb-4">
@@ -138,14 +138,14 @@ export default function WhatWeCleanSection() {
           </div>
         </div>
 
-        <div className="max-w-5xl mx-auto overflow-x-auto bg-[rgba(15,23,42,0.95)] backdrop-blur-md rounded-lg shadow-xl mb-20">
+        <div className="max-w-5xl mx-auto overflow-x-auto bg-[rgba(36,64,66,0.95)] backdrop-blur-md rounded-lg shadow-xl mb-20">
           <table className="w-full border-collapse">
             <thead>
               <tr>
-                <th className="p-2 sm:p-3 bg-[rgba(15,23,42,0.98)] border border-white/10 text-white w-2/5 text-left text-[11px] sm:text-sm">Cleaning Tasks</th>
-                <th className="p-2 sm:p-3 bg-[rgba(15,23,42,0.98)] border border-white/10 text-white text-center text-[11px] sm:text-sm">Standard</th>
-                <th className="p-2 sm:p-3 bg-[rgba(15,23,42,0.98)] border border-white/10 text-white text-center text-[11px] sm:text-sm">Deep</th>
-                <th className="p-2 sm:p-3 bg-[rgba(15,23,42,0.98)] border border-white/10 text-white text-center text-[11px] sm:text-sm">Move-In</th>
+                <th className="p-2 sm:p-3 bg-[rgba(36,64,66,0.98)] border border-white/10 text-white w-2/5 text-left text-[11px] sm:text-sm">Cleaning Tasks</th>
+                <th className="p-2 sm:p-3 bg-[rgba(36,64,66,0.98)] border border-white/10 text-white text-center text-[11px] sm:text-sm">Standard</th>
+                <th className="p-2 sm:p-3 bg-[rgba(36,64,66,0.98)] border border-white/10 text-white text-center text-[11px] sm:text-sm">Deep</th>
+                <th className="p-2 sm:p-3 bg-[rgba(36,64,66,0.98)] border border-white/10 text-white text-center text-[11px] sm:text-sm">Move-In</th>
               </tr>
             </thead>
             <tbody>

@@ -1,6 +1,6 @@
 export default function RefundPolicy() {
   return (
-    <main className="min-h-screen" style={{ background: 'rgba(15, 23, 42, 0.95)' }}>
+    <main className="min-h-screen" style={{ background: 'rgba(36, 64, 66, 0.95)' }}>
       {/* Spacer for fixed header - extra space for mobile menu */}
       <div className="h-40 lg:h-32"></div>
       
