@@ -1,0 +1,264 @@
+@import "tailwindcss";
+
+:root {
+  /* Custom dark blue color palette based on #0f172a */
+  --background: #f8fafc;
+  --foreground: #0f172a;
+  --santa-monica-50: #f8fafc;
+  --santa-monica-100: #e2e8f0;
+  --santa-monica-200: #cbd5e1;
+  --santa-monica-300: #94a3b8;
+  --santa-monica-400: #64748b;
+  --santa-monica-500: #475569;
+  --santa-monica-600: #334155;
+  --santa-monica-700: #1e293b;
+  --santa-monica-800: #244042;
+  --santa-monica-900: #1a2f31;
+  
+  /* Button system */
+  --primary-button-bg: #0C6F47;
+  --primary-button-text: #ffffff;
+  --primary-button-hover-bg: #0a5a3a;
+  
+  --secondary-button-bg: transparent;
+  --secondary-button-text: #ffffff;
+  --secondary-button-border: #ffffff;
+  --secondary-button-hover-bg: rgba(255, 255, 255, 0.1);
+  
+  --tertiary-button-bg: transparent;
+  --tertiary-button-text: #CEC28D;
+  --tertiary-button-border: #CEC28D;
+  --tertiary-button-hover-bg: rgba(206, 194, 141, 0.1);
+  
+  --quaternary-button-bg: #cec28dcc;
+  --quaternary-button-text: #0f172a;
+  --quaternary-button-hover-bg: rgba(206, 194, 141, 0.9);
+
+  /* Accent colors */
+  --forest-green: #22c55e;
+  --earth-brown: #8b4513;
+  --winter-white: #f5f5f5;
+  
+  /* Accessible text colors */
+  --text-on-dark: #f5f5f5;      /* Winter white on dark backgrounds */
+  --text-on-light: #142b14;     /* Santa Monica-900 on light backgrounds */
+  --text-muted-dark: #d1ead1;   /* Santa Monica-200 for muted text on dark */
+  --text-muted-light: #1e4a1e;  /* Santa Monica-700 for muted text on light */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-santa-monica-50: var(--santa-monica-50);
+  --color-santa-monica-100: var(--santa-monica-100);
+  --color-santa-monica-200: var(--santa-monica-200);
+  --color-santa-monica-300: var(--santa-monica-300);
+  --color-santa-monica-400: var(--santa-monica-400);
+  --color-santa-monica-500: var(--santa-monica-500);
+  --color-santa-monica-600: var(--santa-monica-600);
+  --color-santa-monica-700: var(--santa-monica-700);
+  --color-santa-monica-800: var(--santa-monica-800);
+  --color-santa-monica-900: var(--santa-monica-900);
+  --color-forest-green: var(--forest-green);
+  --color-earth-brown: var(--earth-brown);
+  --color-winter-white: var(--winter-white);
+  --color-text-on-dark: var(--text-on-dark);
+  --color-text-on-light: var(--text-on-light);
+  --color-text-muted-dark: var(--text-muted-dark);
+  --color-text-muted-light: var(--text-muted-light);
+  --color-santa-monica-button-light: var(--sm-button-light);
+  --color-santa-monica-button-light-hover: var(--sm-button-light-hover);
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-merriweather);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), system-ui, sans-serif;
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 120px; /* Account for fixed header and announcement bar */
+}
+
+/* Enhanced smooth scrolling with custom timing */
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth !important;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Custom smooth scrolling animation */
+@supports (scroll-behavior: smooth) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Button System */
+.button-primary, .button-secondary, .button-tertiary {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  border: 2px solid transparent;
+}
+
+.button-primary {
+  background-color: var(--primary-button-bg);
+  color: var(--primary-button-text);
+  border-color: var(--primary-button-bg);
+}
+
+.button-primary:hover {
+  background-color: var(--primary-button-hover-bg);
+  border-color: var(--primary-button-hover-bg);
+  transform: translateY(-1px);
+}
+
+.button-secondary {
+  background-color: var(--secondary-button-bg);
+  color: var(--secondary-button-text);
+  border-color: var(--secondary-button-border);
+}
+
+.button-secondary:hover {
+  background-color: var(--secondary-button-hover-bg);
+  transform: translateY(-1px);
+}
+
+.button-tertiary {
+  background-color: var(--tertiary-button-bg);
+  color: var(--tertiary-button-text);
+  border-color: var(--tertiary-button-border);
+}
+
+.button-tertiary:hover {
+  background-color: var(--tertiary-button-hover-bg);
+  transform: translateY(-1px);
+}
+
+.button-quaternary {
+  background-color: var(--quaternary-button-bg);
+  color: var(--quaternary-button-text);
+  border-color: var(--quaternary-button-bg);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  border: 2px solid transparent;
+}
+
+.button-quaternary:hover {
+  background-color: var(--quaternary-button-hover-bg);
+  transform: translateY(-1px);
+}
+
+/* Form expansion animations */
+#quote-form-container {
+  transition: all 0.3s ease;
+  will-change: width, max-width;
+}
+
+.quote-form-container.expand {
+  width: 100% !important;
+  max-width: 800px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  transition: all 0.3s ease-in-out !important;
+}
+
+#quote-form-container.expand {
+  width: 100% !important;
+  max-width: 800px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Pulse ring animation for form container */
+@keyframes pulse-ring {
+  0% { transform: scale(1); }
+  50% { opacity: 0.8; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.animate-pulse-ring {
+  animation: pulse-ring 1s cubic-bezier(0.4, 0, 0.6, 1);
+}
+
+/* Button glow animation */
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.25);
+  }
+  100% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
+  }
+}
+
+.animate-glow {
+  animation: glow 3s ease-in-out infinite;
+}
+
+/* Form shake animation */
+@keyframes form-shake {
+  0% { transform: translateX(0); }
+  10% { transform: translateX(-3px); }
+  20% { transform: translateX(3px); }
+  30% { transform: translateX(-3px); }
+  40% { transform: translateX(3px); }
+  50% { transform: translateX(-2px); }
+  60% { transform: translateX(2px); }
+  70% { transform: translateX(-1px); }
+  80% { transform: translateX(1px); }
+  90% { transform: translateX(-1px); }
+  100% { transform: translateX(0); }
+}
+
+.animate-form-shake-gentle {
+  animation: form-shake 1.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+@keyframes border-glow {
+  0% {
+    box-shadow: 0 0 15px rgba(206, 194, 141, 0.6);
+  }
+  100% {
+    box-shadow: 0 0 25px rgba(206, 194, 141, 0.9);
+  }
+}
+
+@keyframes selected-pulse {
+  0% {
+    border-color: rgba(255, 255, 255, 0.4);
+  }
+  50% {
+    border-color: rgba(255, 255, 255, 0.8);
+  }
+  100% {
+    border-color: rgba(255, 255, 255, 0.4);
+  }
+}
+
+.animate-selected-pulse {
+  animation: selected-pulse 2s ease-in-out infinite;
+}

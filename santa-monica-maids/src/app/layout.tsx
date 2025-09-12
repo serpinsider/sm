@@ -19,8 +19,8 @@ const merriweather = Merriweather({
 export const metadata: Metadata = {
   metadataBase: new URL('https://santamonicamaids.com'),
   title: {
-    default: "Santa Monica Maids - Professional House Cleaning",
-    template: "%s - Santa Monica Maids"
+    default: "Santa Monica Maids | Professional House Cleaning Services - Santa Monica",
+    template: "%s - Santa Monica Maids - Professional Cleaning"
   },
   description: "Professional house cleaning in Santa Monica. Licensed & insured maids, 100% satisfaction guarantee. Book your trusted cleaning service in Santa Monica, Venice, Brentwood & Pacific Palisades today!",
   keywords: [
@@ -59,12 +59,12 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://santamonicamaids.com",
-    title: "Santa Monica Maids - Professional House Cleaning",
+    title: "Santa Monica Maids - Professional House Cleaning Service - Santa Monica",
     description: "Professional house cleaning service in Santa Monica, California. Reliable, insured, and trusted residential cleaning with free quotes.",
     siteName: "Santa Monica Maids",
     images: [
       {
-        url: "/ogs-image.png",
+        url: "https://santamonicamaids.com/ogs-image.png",
         width: 1200,
         height: 630,
         alt: "Santa Monica Maids - Professional House Cleaning Services",
@@ -73,10 +73,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Santa Monica Maids - Professional House Cleaning",
+    title: "Santa Monica Maids - Professional House Cleaning Service - Santa Monica",
     description: "Professional house cleaning service in Santa Monica, California. Reliable, insured, trusted residential cleaning. Get your free quote today!",
     creator: "@santamonicamaids",
-    images: ["/ogs-image.png"],
+    images: ["https://santamonicamaids.com/ogs-image.png"],
   },
   verification: {
     google: "your-google-verification-code",
