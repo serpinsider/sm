@@ -4,14 +4,13 @@ import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 
 interface FormData {
-  // Step 1 - Location
-  zipCode: string;
+  // Step 1 - Contact
+  phone: string;
   
   // Step 2 - Property & Service Details
   firstName: string;
   lastName: string;
   email: string;
-  phone: string;
   bedrooms: string;
   bathrooms: string;
   squareFootage: string;
@@ -56,11 +55,10 @@ export default function StepWizard({ onFormExpand }: StepWizardProps = {}) {
   const prevExpandedStateRef = useRef<boolean | undefined>(undefined);
   
   const [formData, setFormData] = useState<FormData>({
-    zipCode: '',
+    phone: '',
     firstName: '',
     lastName: '',
     email: '',
-    phone: '',
     bedrooms: '2',
     bathrooms: '1',
     squareFootage: 'Under 1,000 sqft',
@@ -132,19 +130,37 @@ export default function StepWizard({ onFormExpand }: StepWizardProps = {}) {
     return cleanPhone.length >= 10 && phoneRegex.test(cleanPhone);
   };
 
-  const validateZipCode = (zipCode: string): boolean => {
-    const zipRegex = /^\d{5}(-\d{4})?$/;
-    return zipRegex.test(zipCode);
+  const formatPhoneNumber = (value: string): string => {
+    // Remove all non-digits
+    const cleaned = value.replace(/\D/g, '');
+    
+    // Format as (XXX) XXX-XXXX
+    if (cleaned.length >= 10) {
+      return `(${cleaned.slice(0, 3)}) ${cleaned.slice(3, 6)}-${cleaned.slice(6, 10)}`;
+    } else if (cleaned.length >= 6) {
+      return `(${cleaned.slice(0, 3)}) ${cleaned.slice(3, 6)}-${cleaned.slice(6)}`;
+    } else if (cleaned.length >= 3) {
+      return `(${cleaned.slice(0, 3)}) ${cleaned.slice(3)}`;
+    } else if (cleaned.length > 0) {
+      return `(${cleaned}`;
+    }
+    return cleaned;
+  };
+
+  const validatePhoneNumber = (phone: string): boolean => {
+    // Remove formatting and check if we have exactly 10 digits
+    const cleaned = phone.replace(/\D/g, '');
+    return cleaned.length === 10;
   };
 
   const validateStep = (step: number): Record<string, string> => {
     const newErrors: Record<string, string> = {};
 
     if (step === 1) {
-      if (!formData.zipCode.trim()) {
-        newErrors.zipCode = 'Zip code is required';
-      } else if (!validateZipCode(formData.zipCode)) {
-        newErrors.zipCode = 'Please enter a valid zip code';
+      if (!formData.phone.trim()) {
+        newErrors.phone = 'Phone number is required';
+      } else if (!validatePhoneNumber(formData.phone)) {
+        newErrors.phone = 'Please enter a complete 10-digit phone number';
       }
     }
 
@@ -159,11 +175,6 @@ export default function StepWizard({ onFormExpand }: StepWizardProps = {}) {
         newErrors.email = 'Email is required';
       } else if (!validateEmail(formData.email)) {
         newErrors.email = 'Please enter a valid email address';
-      }
-      if (!formData.phone.trim()) {
-        newErrors.phone = 'Phone number is required';
-      } else if (!validatePhone(formData.phone)) {
-        newErrors.phone = 'Please enter a valid phone number';
       }
       if (!formData.serviceType) {
         newErrors.serviceType = 'Please select a service type';
@@ -195,8 +206,8 @@ export default function StepWizard({ onFormExpand }: StepWizardProps = {}) {
         setErrors(prev => ({ ...prev, email: '' }));
       }
     } else if (field === 'phone') {
-      if (value && !validatePhone(value)) {
-        setErrors(prev => ({ ...prev, phone: 'Please enter a valid phone number' }));
+      if (value && !validatePhoneNumber(value)) {
+        setErrors(prev => ({ ...prev, phone: 'Please enter a complete 10-digit phone number' }));
       } else {
         setErrors(prev => ({ ...prev, phone: '' }));
       }
@@ -276,7 +287,6 @@ export default function StepWizard({ onFormExpand }: StepWizardProps = {}) {
         lastName: formData.lastName,
         email: formData.email,
         phone: formData.phone,
-        zipCode: formData.zipCode,
         bedrooms: formData.bedrooms,
         bathrooms: formData.bathrooms,
         squareFootage: formData.squareFootage,
@@ -337,27 +347,30 @@ export default function StepWizard({ onFormExpand }: StepWizardProps = {}) {
           <div className="space-y-6">
             <div className="text-center mb-6">
               <h3 className="text-sm sm:text-base text-white/70 mb-2">
-                Let&apos;s see if we serve your area!
+                We&apos;ll text your quote in 60 seconds!
               </h3>
             </div>
             
             <div>
               <label className="block text-sm font-medium text-white mb-2">
-                Zip Code
+                Phone Number
               </label>
               <input
-                type="text"
-                value={formData.zipCode}
-                onChange={(e) => updateFormData('zipCode', e.target.value)}
-                placeholder="Enter your zip code"
-                maxLength={5}
+                type="tel"
+                value={formData.phone}
+                onChange={(e) => {
+                  const formatted = formatPhoneNumber(e.target.value);
+                  updateFormData('phone', formatted);
+                }}
+                placeholder="(310) 555-0123"
+                maxLength={14}
                 className={`w-full px-3 py-3 border rounded-lg bg-white/20 text-white placeholder-white/70 focus:ring-2 focus:ring-[#0C6F47] focus:border-white backdrop-blur-sm ${
-                  errors.zipCode ? 'border-red-400 ring-1 ring-red-400' : 'border-white/30'
+                  errors.phone ? 'border-red-400 ring-1 ring-red-400' : 'border-white/30'
                 }`}
                 required
               />
-              {errors.zipCode && (
-                <p className="mt-1 text-sm text-red-300">{errors.zipCode}</p>
+              {errors.phone && (
+                <p className="mt-1 text-sm text-red-300">{errors.phone}</p>
               )}
             </div>
           </div>
@@ -411,43 +424,23 @@ export default function StepWizard({ onFormExpand }: StepWizardProps = {}) {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div>
-                <label className="block text-sm font-semibold mb-2 text-white">
-                  Email*
-                </label>
-                <input
-                  type="email"
-                  value={formData.email}
-                  onChange={(e) => updateFormData('email', e.target.value)}
-                  placeholder="email@example.com"
-                  className={`w-full p-3 border rounded-lg bg-white/10 text-white placeholder-white/50 focus:border-[#968642] focus:ring-1 focus:ring-[#968642] backdrop-blur-sm ${
-                    errors.email ? 'border-red-400 ring-1 ring-red-400' : 'border-white/20'
-                  }`}
-                  required
-                />
-                {errors.email && (
-                  <p className="mt-1 text-sm text-red-300">{errors.email}</p>
-                )}
-              </div>
-              <div>
-                <label className="block text-sm font-semibold mb-2 text-white">
-                  Phone*
-                </label>
-                <input
-                  type="tel"
-                  value={formData.phone}
-                  onChange={(e) => updateFormData('phone', e.target.value)}
-                  placeholder="(916) 680-5200"
-                  className={`w-full p-3 border rounded-lg bg-white/10 text-white placeholder-white/50 focus:border-[#968642] focus:ring-1 focus:ring-[#968642] backdrop-blur-sm ${
-                    errors.phone ? 'border-red-400 ring-1 ring-red-400' : 'border-white/20'
-                  }`}
-                  required
-                />
-                {errors.phone && (
-                  <p className="mt-1 text-sm text-red-300">{errors.phone}</p>
-                )}
-              </div>
+            <div>
+              <label className="block text-sm font-semibold mb-2 text-white">
+                Email*
+              </label>
+              <input
+                type="email"
+                value={formData.email}
+                onChange={(e) => updateFormData('email', e.target.value)}
+                placeholder="email@example.com"
+                className={`w-full p-3 border rounded-lg bg-white/10 text-white placeholder-white/50 focus:border-[#968642] focus:ring-1 focus:ring-[#968642] backdrop-blur-sm ${
+                  errors.email ? 'border-red-400 ring-1 ring-red-400' : 'border-white/20'
+                }`}
+                required
+              />
+              {errors.email && (
+                <p className="mt-1 text-sm text-red-300">{errors.email}</p>
+              )}
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -712,9 +705,9 @@ export default function StepWizard({ onFormExpand }: StepWizardProps = {}) {
   const canProceed = () => {
     switch (currentStep) {
       case 1:
-        return formData.zipCode;
+        return formData.phone;
       case 2:
-        return formData.bedrooms && formData.bathrooms && formData.serviceType && formData.frequency && formData.squareFootage && formData.firstName && formData.lastName && formData.email && formData.phone;
+        return formData.bedrooms && formData.bathrooms && formData.serviceType && formData.frequency && formData.squareFootage && formData.firstName && formData.lastName && formData.email;
       case 3:
         return true; // Addons are optional
       default:

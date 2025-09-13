@@ -280,7 +280,7 @@ export default function QuoteForm() {
                 <div className="relative">
                   <input
                     type="tel"
-                    placeholder="(916) 680-5200"
+                    placeholder="(310) 555-0123"
                     className={`w-full p-3 border rounded-lg bg-[#1a2f31]/70 text-white placeholder-white/50 focus:border-[#968642] focus:ring-1 focus:ring-[#968642] ${
                       formData.phone && !isValidPhone(formData.phone) 
                         ? 'border-red-500' 
