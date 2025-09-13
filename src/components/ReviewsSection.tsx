@@ -16,36 +16,36 @@ const reviews = [
   {
     id: 2,
     name: "Mike T.",
-    location: "Roseville, CA",
+    location: "Venice, CA",
     rating: 5,
-    text: "Exceeded expectations! Attention to detail is amazing. Best cleaning service I've used in Roseville.",
+    text: "Exceeded expectations! Attention to detail is amazing. Best cleaning service I've used in the Venice area.",
     date: "1 week ago",
     image: "https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=150&h=150&fit=crop&crop=face&auto=format&q=80"
   },
   {
     id: 3,
     name: "Amanda K.",
-    location: "Elk Grove, CA",
+    location: "Marina del Rey, CA",
     rating: 5,
-    text: "Reliable, trustworthy, and efficient. They make my home feel brand new every visit!",
+    text: "Reliable, trustworthy, and efficient. They make my Marina del Rey apartment feel brand new every visit!",
     date: "3 days ago",
     image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&h=150&fit=crop&crop=face&auto=format&q=80"
   },
   {
     id: 4,
     name: "Chris L.",
-    location: "Folsom, CA",
+    location: "Pacific Palisades, CA",
     rating: 5,
-    text: "Perfect for my busy schedule. They're thorough, professional, and great value for money.",
+    text: "Perfect for my busy schedule in Pacific Palisades. They're thorough, professional, and great value for money.",
     date: "5 days ago",
     image: "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?w=150&h=150&fit=crop&crop=face&auto=format&q=80"
   },
   {
     id: 5,
     name: "Sarah M.",
-    location: "Davis, CA",
+    location: "Brentwood, CA",
     rating: 5,
-    text: "Love their cleaning service! My home is always spotless and fresh. Highly recommend!",
+    text: "Love their cleaning service! My Brentwood home is always spotless and fresh. Highly recommend!",
     date: "1 week ago",
     image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&h=150&fit=crop&crop=face&auto=format&q=80"
   },
