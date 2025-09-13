@@ -193,7 +193,7 @@ export default function QuoteForm() {
         _subject: `Quote Request for Santa Monica Maids from ${formData.firstName} ${formData.lastName} - #${confirmationNumber}`,
       };
 
-      const formspreeResponse = await fetch('https://formspree.io/f/xeoebodr', {
+      const formspreeResponse = await fetch('https://formspree.io/f/xeoldple', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

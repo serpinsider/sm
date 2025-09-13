@@ -297,7 +297,7 @@ export default function StepWizard({ onFormExpand }: StepWizardProps = {}) {
         _subject: `Quote Request for Santa Monica Maids from ${formData.firstName} ${formData.lastName} - #${confirmationNumber}`,
       };
 
-      const response = await fetch('https://formspree.io/f/xeoebodr', {
+      const response = await fetch('https://formspree.io/f/xeoldple', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
