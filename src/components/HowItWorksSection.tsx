@@ -22,7 +22,7 @@ export default function HowItWorksSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
                       <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-[#CEC28D] mb-4">
-            How It Works
+              Our Process
           </h2>
                       <p className="text-sm sm:text-base text-white/70 max-w-2xl mx-auto">
               Book your cleaning service in three easy steps.

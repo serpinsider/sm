@@ -72,7 +72,7 @@ export default function HeroSection() {
                         <h1 className="text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-[#CEC28D] mb-6 drop-shadow-lg">
               Premium Santa Monica House Cleaners
             </h1>
-            <p className="text-base sm:text-base lg:text-lg text-gray-100 mb-8 leading-relaxed drop-shadow-md">
+            <p className="text-base sm:text-lg lg:text-xl text-gray-100 mb-8 leading-relaxed drop-shadow-md">
               Schedule your cleaning appointment or receive a free estimate in under 60 seconds.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">

@@ -6,7 +6,7 @@ export default function ContactSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
                       <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-[#CEC28D] mb-4">
-            Ready to Get Started?
+            Contact Us
           </h2>
                       <p className="text-sm sm:text-base text-white/70 max-w-3xl mx-auto">
               Get your instant quote and book your cleaning service today.

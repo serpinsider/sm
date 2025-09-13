@@ -108,19 +108,16 @@ export default function Header() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <nav className="flex items-center justify-center w-full pb-4 space-x-8">
                 <Link href="/#services" scroll={true} className="text-white/80 hover:text-white font-medium transition-colors">
-                  Cleaning Services
+                  Services
                 </Link>
                 <Link href="/#how-it-works" scroll={true} className="text-white/80 hover:text-white font-medium transition-colors">
-                  Booking Process
-                </Link>
-                <Link href="/#areas" scroll={true} className="text-white/80 hover:text-white font-medium transition-colors">
-                  Service Locations
+                  Process
                 </Link>
                 <Link href="/#faq" scroll={true} className="text-white/80 hover:text-white font-medium transition-colors">
-                  Common Questions
+                  FAQ
                 </Link>
                 <Link href="/#contact" scroll={true} className="text-white/80 hover:text-white font-medium transition-colors">
-                  Get in Touch
+                  Contact
                 </Link>
               </nav>
             </div>
@@ -193,21 +190,14 @@ export default function Header() {
                   className="text-white/90 hover:text-white font-medium text-lg py-2 border-b border-white/10"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  Our Services
+                  Services
                 </Link>
                 <Link 
                   href="/#how-it-works" 
                   className="text-white/90 hover:text-white font-medium text-lg py-2 border-b border-white/10"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  How It Works
-                </Link>
-                <Link 
-                  href="/#areas" 
-                  className="text-white/90 hover:text-white font-medium text-lg py-2 border-b border-white/10"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Areas We Serve
+                  Process
                 </Link>
                 <Link 
                   href="/#faq" 
@@ -221,7 +211,7 @@ export default function Header() {
                   className="text-white/90 hover:text-white font-medium text-lg py-2 border-b border-white/10"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  Contact Us
+                  Contact
                 </Link>
 
                 <div className="flex items-center justify-center space-x-6 py-4">

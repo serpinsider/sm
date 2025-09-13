@@ -162,7 +162,7 @@ export default function ServicesSection() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-[#CEC28D] mb-4">
-              Cleaning Services by Santa Monica Maids
+              Our Services
             </h2>
             <p className="text-sm sm:text-base text-white/70 max-w-3xl mx-auto">
               Select the ideal residential cleaning solution tailored for your lifestyle.
@@ -185,7 +185,7 @@ export default function ServicesSection() {
 
                 <div className="space-y-3 mb-6">
                   {service.features.map((feature, featureIndex) => (
-                    <div key={featureIndex} className="flex items-center text-xs sm:text-sm text-white/90">
+                    <div key={featureIndex} className="flex items-center text-sm sm:text-base text-white/90">
                       <svg className="w-3.5 h-3.5 text-sm-button-light mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>

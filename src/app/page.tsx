@@ -5,7 +5,6 @@ import QuoteBar from '@/components/QuoteBar';
 import ServicesSection from '@/components/ServicesSection';
 import HowItWorksSection from '@/components/HowItWorksSection';
 import WhatWeCleanSection from '@/components/WhatWeCleanSection';
-import AreasWeServeSection from '@/components/AreasWeServeSection';
 import ReviewsSection from '@/components/ReviewsSection';
 import FAQSection from '@/components/FAQSection';
 import ContactSection from '@/components/ContactSection';
@@ -22,7 +21,6 @@ export default function Home() {
       <QuoteBar />
       <HowItWorksSection />
       <CallOrTextBar />
-      <AreasWeServeSection />
       <QuoteBar />
       <ReviewsSection />
       <CallOrTextBar />

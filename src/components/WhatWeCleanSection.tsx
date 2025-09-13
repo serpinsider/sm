@@ -113,7 +113,7 @@ export default function WhatWeCleanSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-[#CEC28D] mb-4">
-            Detailed Service Breakdown
+              What We Clean
           </h2>
                       <p className="text-sm sm:text-base text-white/70 max-w-3xl mx-auto">
               Discover exactly what&apos;s covered in every Santa Monica cleaning appointment.
@@ -142,10 +142,10 @@ export default function WhatWeCleanSection() {
           <table className="w-full border-collapse">
             <thead>
               <tr>
-                <th className="p-2 sm:p-3 bg-[rgba(36,64,66,0.98)] border border-white/10 text-white w-2/5 text-left text-[11px] sm:text-sm">Cleaning Tasks</th>
-                <th className="p-2 sm:p-3 bg-[rgba(36,64,66,0.98)] border border-white/10 text-white text-center text-[11px] sm:text-sm">Standard</th>
-                <th className="p-2 sm:p-3 bg-[rgba(36,64,66,0.98)] border border-white/10 text-white text-center text-[11px] sm:text-sm">Deep</th>
-                <th className="p-2 sm:p-3 bg-[rgba(36,64,66,0.98)] border border-white/10 text-white text-center text-[11px] sm:text-sm">Move-In</th>
+                <th className="p-2 sm:p-3 bg-[rgba(36,64,66,0.98)] border border-white/10 text-white w-2/5 text-left text-xs sm:text-sm">Cleaning Tasks</th>
+                <th className="p-2 sm:p-3 bg-[rgba(36,64,66,0.98)] border border-white/10 text-white text-center text-xs sm:text-sm">Standard</th>
+                <th className="p-2 sm:p-3 bg-[rgba(36,64,66,0.98)] border border-white/10 text-white text-center text-xs sm:text-sm">Deep</th>
+                <th className="p-2 sm:p-3 bg-[rgba(36,64,66,0.98)] border border-white/10 text-white text-center text-xs sm:text-sm">Move-In</th>
               </tr>
             </thead>
             <tbody>
@@ -154,7 +154,7 @@ export default function WhatWeCleanSection() {
                   ? 'bg-white/[0.03]' 
                   : 'bg-white/[0.06]'
                 }>
-                  <td className="p-2 sm:p-3 border border-white/10 text-white text-[11px] sm:text-sm">{task.task}</td>
+                  <td className="p-2 sm:p-3 border border-white/10 text-white text-xs sm:text-sm">{task.task}</td>
                   <td className="p-2 sm:p-3 border border-white/10 text-center">
                     {task.routine ? <span className="text-forest-green text-base sm:text-lg">✓</span> : <span className="text-red-400 text-base sm:text-lg">✗</span>}
                   </td>
@@ -164,7 +164,7 @@ export default function WhatWeCleanSection() {
                   <td className="p-2 sm:p-3 border border-white/10 text-center">
                     {task.moveInOut === true ? <span className="text-forest-green text-base sm:text-lg">✓</span> : 
                      task.moveInOut === false ? <span className="text-red-400 text-base sm:text-lg">✗</span> : 
-                     <span className="text-white/60 text-[11px] sm:text-sm">N/A</span>}
+                     <span className="text-white/60 text-xs sm:text-sm">N/A</span>}
                   </td>
                 </tr>
               ))}

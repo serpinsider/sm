@@ -62,7 +62,7 @@ export default function FAQSection() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
                       <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-[#CEC28D] mb-4">
-            Santa Monica Cleaning FAQ
+            FAQ
           </h2>
                       <p className="text-sm sm:text-base text-white/70">
               Everything you need to know about our residential cleaning services.
